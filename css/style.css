@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========*/
+/*  
+  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+  Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
+  1.Import Files
+    1.1 Fonts
+    1.2 Css
+  2. Layout Style
+  3. General
+    3.1 Header
+    3.2 Logo
+    3.3 Search
+    3.4 User Account
+    3.5 Cart
+    3.6 Top Bar
+    3.6 Button
+    3.6 Back To Top
+    3.6 Preloader
+    3.6 Pagination
+    3.6 Video
+  4. Home Page
+    4.1 Page Home
+  5. Menu
+    5.1mega-menu
+  6. Socials
+  7. SLIDER
+  8. Banners
+  9. Product Home
+    9.1 Product Home Title
+    9.2 Product Home Tabs
+    9.3 Product Home Button Owls
+    9.4 Product Image, Info
+    9.5 Hot Deals
+    9.6 Max Your Style
+  10. Core Feature
+  11. LOAD MORE PRODUCTS
+  12. News Home
+    12.1 Latest From Blog
+  13. Contact Info Home
+  14. Home About Us
+  15. Categories Menu
+  16. Get In Touch
+  17. Newsletter
+  18. Brands
+  19. Instagram
+  20. Policies
+  21. Categories Images
+  22. Promotion
+  23. Testimonials
+  24. Copyright & Payments
+  25. Tags
+  26. Page Products
+    26.1 Controller
+    26.1 Category Image
+  27. Sidebar
+    27.1 Price
+    27.2 Color
+    27.3 Search
+    27.4 Recent Post
+  28. Page Products Details
+    28.1 Products Details
+    28.2 Tab Products Details
+    28.3 Image Products Sidebar
+    28.4 Product_Detail_v2
+    28.5 Related Products
+  29. Page About
+    29.1 Page About Testimonials
+    29.2Page About Our Team
+  30.CONTACT
+  31. Page Products
+    31.1 Category
+    31.2 Products Listing
+  32. Page Blog
+    32.1 Blog
+    32.2 Blog jumbotron
+  33. Page Blog Details
+    33.1 Blog Details
+  34. Page 404
+  35. Footer
+  
+/*==========*/
+
+/*===== Import Files =====*/
+/* Fonts */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext,vietnamese';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900&subset=latin-ext');
+/*  Css */
+@import url(../vendor/bootstrap/bootstrap.min.css);
+/*@import url(owl.carousel.min.css);
+@import url(font-awesome.min.css);
+@import url(icofont.css);*/
+
+/*===== Layout Style =====*/
+body {
+  max-width: 1920px;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fafafa;
+  word-break: break-word;
+  margin: 0;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #ddd;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5px;
+}
