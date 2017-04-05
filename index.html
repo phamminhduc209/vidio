@@ -32,11 +32,165 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
-	
+<body class="home index" data-component="UserPopover">
+	<div class="overlay" style="display: none;"></div>
+	<div class="fauxcolumn"></div>
 	<header id="header" class="site-header container-fluid main-menu">
-		
-	</header><!-- /header -->
+		<div class="site-header__container">
+			<div class="site-header__left">
+				<div class="site-header__logo">
+					<div class="nav-trigger">
+						<a class="nav-trigger__link" href="#">
+							<span class="nav-trigger__bar icon__bar"></span>
+						</a>
+					</div><!-- /nav-trigger -->
+					<div class="vidio-logo">
+						<a href="/">
+							<img alt="Nonton Online Video Film Lucu, Unik dan Menarik, Gratis di Vidio.com!" class="vidio-logo__image" src="images/logo.png">
+						</a>
+					</div>
+				</div><!-- /site-header__logo -->
+				<div class="category" data-component="MegaMenu">
+					<div class="category__root js-mega-menu__handle invisible" id="browse_categories">
+						Category&ensp;<span class="caret-close"></span>
+					</div><!-- /category__root js-mega-menu__handle invisible #browse_categories -->
+					<div class="category__wrapper">
+						<nav class="category__nav js-mega-menu">
+							<ul class="category__nav__list">
+								<li><a class="category__nav__list__item category__nav__list__livestreaming" href="/live">LIVE</a></li>
+								<li><a class="category__nav__list__item category__nav__list__item--active" href="/">Home</a></li>
+								<li><a class="category__nav__list__item" href="/categories/32-entertainment">Entertainment</a></li>
+								<li><a class="category__nav__list__item" href="/categories/40-news">News</a></li>
+								<li><a class="category__nav__list__item" href="/categories/42-sports">Sports</a></li>
+								<li><a class="category__nav__list__item" href="/categories/44-vlog">Vlog</a></li>
+								<li><a class="category__nav__list__item" href="/categories/10-music">Music</a></li>
+								<li><a class="category__nav__list__item" href="/categories/35-funny">Funny</a></li>
+								<li><a class="category__nav__list__item" href="/categories/29-sinetron">Sinetron</a></li>
+								<li class="hideshow dropdown more">
+									<a href="#" class="morenav-hover">More <span class="caret-close"></span></a>
+									<ul class="morenav-hover__menu">
+										<li><a class="category__nav__list__item" href="/categories/26-film-series">Film &amp; Series</a></li>
+										<li><a class="category__nav__list__item" href="/categories/33-horror">Horror</a></li>
+										<li><a class="category__nav__list__item" href="/categories/38-lifestyle">Lifestyle</a></li>
+										<li><a class="category__nav__list__item" href="/categories/27-kids">Kids</a></li>.
+										<li><a class="category__nav__list__item" href="/categories/51-webtoon">Webtoon</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div><!-- /category -->
+			</div><!-- /site-header__left -->
+			<div class="site-header__center">
+		       	<div class="site-header__search">
+					<script>var popular_search_keywords = ["rcti", "ftv", "roman picisan", "ftv sctv", "anak sekolahan"];</script>
+					<div itemscope="" itemtype="http://schema.org/WebSite">
+						<meta content="https://www.vidio.com" itemprop="url" />
+						<form id="search_form" class="main-menu__search" data-component="SearchSuggestion" itemprop="potentialAction" itemscope="itemscope" itemtype="http://schema.org/SearchAction" action="/search" accept-charset="UTF-8" method="get">
+							<input name="utf8" type="hidden" value="&#x2713;" />
+							<meta content="https://www.vidio.com/search?q={q}" itemprop="target" />
+							<div class="input-group input-group-md">
+								<input type="text" name="q" id="q" placeholder="Cari vidio disini..." class="form-control main-menu__search-input js__main-search" itemprop="query-input" required="required" pattern=".{3,70}" title="Please enter minimum 3 characters and maximum 70 characters" autofocus="autofocus" />
+								<input class="reset-form" type="reset" />
+								<span class="input-group-btn input-search">
+									<button class="btn button-search pull-right main-menu__search-icon ga__search_button" style="margin-left: 0" type="submit">
+										<i class="icon__search"></i>
+									</button>
+								</span>
+							</div>
+						</form>
+					</div>
+		       	</div>
+    		</div><!-- /site-header__center -->
+    		<div class="site-header__right">
+				<div class="site-header__user-upload">
+					<a class="ga-site-header__user-upload-button site-header__user-upload-button site-header__upload-button" rel="nofollow" href="/users/login?user_return_to=%2Fdashboard%2Fvideos%2Fnew">Unggah</a>
+					<a class="site-header__user-upload-login site-header__login-button" id="site-header__user-upload-login" rel="nofollow" href="/users/login">Sign in</a>
+				</div>
+			</div><!-- /site-header__right -->
+		</div><!-- /site-header__container -->
+	</header><!-- /#header -->
+
+	<div class="container-fluid clearfix" id="main-container">
+		<div class="content-column">
+			<div class="site-content" id="article-container">
+				<div class="livestreaming-notification hide-me" data-component="LivestreamingNotification">
+                    <a class="livestreaming-notification-content" href="#">
+                        <span class="livestreaming-notification__icon"></span>
+                        <div class="livestreaming-notification-content__text"></div>
+                    </a>
+                    <div class="livestreaming-notification-close"><a class="livestreaming-notification-close__link" href="#"><span></span></a></div>
+                </div><!-- /livestreaming-notification hide-me -->
+                <div class="notification" data-component="FlashNotification">
+                    <div class="notification--session_notice hide-me" role="alert"></div>
+                    <div class="notification--notice hide-me" role="alert"></div>
+                    <div class="notification--warning hide-me" role="alert"></div>
+                    <div class="notification--error hide-me" role="alert"></div>
+                    <span class="notification--close hide-me"></span>
+                </div><!-- /notification -->
+                <div class="mobile-notice" data-component="MobileNotice"></div><!-- /mobile-notice -->
+                <article id="header">
+                	<div class="ad"></div>
+                	<div class="headline-tron" data-component="HeadlineTron" id="headline">
+                		<a class="headline-tron__link" data-id="930" href="https://www.vidio.com/contests/44-bintang-panggung-asik?utm_source=HDLN&amp;utm_medium=HDLN1&amp;utm_campaign=HDLN%20click" target="_blank">
+                            <picture class="desktop-picture">
+                                <source type="image/webp" srcset="https://cdn1-a.production.images.static6.com/FPTm6v3-7wwS1CDeOySeCew48Jo=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 1x,
+                                    https://cdn0-a.production.images.static6.com/iMMWBgjx9ri0AMBcYHQI0_t5A5Q=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 2x" />
+                                <img src="https://cdn1-a.production.images.static6.com/Mjfi0k4GpOFHCC8KXaV1K4eoOME=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg" srcset="https://cdn1-a.production.images.static6.com/Mjfi0k4GpOFHCC8KXaV1K4eoOME=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 1x,
+                                    https://cdn0-a.production.images.static6.com/IjxXVCMvp6iWBJbXZOwdGTfZcLA=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="930" />
+                            </picture>
+                        </a>
+                        <script class="tmpl-headline" data-id="930" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn1-a.production.images.static6.com/FPTm6v3-7wwS1CDeOySeCew48Jo=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 1x,
+                            https://cdn0-a.production.images.static6.com/iMMWBgjx9ri0AMBcYHQI0_t5A5Q=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 2x" /><img src="https://cdn1-a.production.images.static6.com/Mjfi0k4GpOFHCC8KXaV1K4eoOME=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg" srcset="https://cdn1-a.production.images.static6.com/Mjfi0k4GpOFHCC8KXaV1K4eoOME=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 1x,
+                            https://cdn0-a.production.images.static6.com/IjxXVCMvp6iWBJbXZOwdGTfZcLA=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/930/bintang-panggung-asik-bd20fc.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="930" /></picture>
+                    </script>
+                        <script class="tmpl-headline" data-id="943" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn0-a.production.images.static6.com/8X_fsrVOtthCtte6lmL2PL3Gja0=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/943/romy-syalasa-676c33.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/djcsDHienJoUDZ-V8OJXezUhQyk=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/943/romy-syalasa-676c33.jpg 2x" /><img src="https://cdn1-a.production.images.static6.com/R9rlluYpZrUbs-BiwGVONyEGtr0=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/943/romy-syalasa-676c33.jpg" srcset="https://cdn1-a.production.images.static6.com/R9rlluYpZrUbs-BiwGVONyEGtr0=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/943/romy-syalasa-676c33.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/4ZxDmUQHb560x1eXQFCAasu_c4Q=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/943/romy-syalasa-676c33.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="943" /></picture>
+                        </script>
+                        <script class="tmpl-headline" data-id="944" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn0-a.production.images.static6.com/ftTQkKOefh-jpY_HJpl1jx67DaM=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/944/make-up-tutorial-89cdbb.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/Rjb-UBkJdoNVVBYC_jY4NQlUsjY=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/944/make-up-tutorial-89cdbb.jpg 2x" /><img src="https://cdn0-a.production.images.static6.com/h5YbqO20TcrHLR2HfNUzlmC25xk=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/944/make-up-tutorial-89cdbb.jpg" srcset="https://cdn0-a.production.images.static6.com/h5YbqO20TcrHLR2HfNUzlmC25xk=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/944/make-up-tutorial-89cdbb.jpg 1x,
+                            https://cdn0-a.production.images.static6.com/qcbpT9Nd8NCZfV9mSNxb8V-l3h8=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/944/make-up-tutorial-89cdbb.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="944" /></picture>
+                        </script>
+                        <script class="tmpl-headline" data-id="942" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn0-a.production.images.static6.com/CXwZViafsvUM76CU0H4SxxYK1PE=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/942/margin-w-5317e4.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/HuhzFcENR0uh2c9xr_PY7W-3i_w=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/942/margin-w-5317e4.jpg 2x" /><img src="https://cdn0-a.production.images.static6.com/iTyBDCOBB3gBafTGQYEr_vF-WZs=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/942/margin-w-5317e4.jpg" srcset="https://cdn0-a.production.images.static6.com/iTyBDCOBB3gBafTGQYEr_vF-WZs=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/942/margin-w-5317e4.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/PCW42mWFEq9LambjVEgu453WQw0=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/942/margin-w-5317e4.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="942" /></picture>
+                        </script>
+                        <script class="tmpl-headline" data-id="945" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn1-a.production.images.static6.com/2GJwow34W9mM5GjlXVFgUKVdGRw=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/945/fashion-nation-7f0afc.jpg 1x,
+                            https://cdn0-a.production.images.static6.com/w_IbFHTgaWtXlc1qQfKSVe3q2Zw=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/945/fashion-nation-7f0afc.jpg 2x" /><img src="https://cdn1-a.production.images.static6.com/IRQ4UU-fsvBE5JHPfSIOdCU1lRo=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/945/fashion-nation-7f0afc.jpg" srcset="https://cdn1-a.production.images.static6.com/IRQ4UU-fsvBE5JHPfSIOdCU1lRo=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/945/fashion-nation-7f0afc.jpg 1x,
+                            https://cdn0-a.production.images.static6.com/bWQmLqexW19RjUb6ahPXif3_wSM=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/945/fashion-nation-7f0afc.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="945" /></picture>
+                        </script>
+                        <script class="tmpl-headline" data-id="946" type="text/x-tmpl"><picture class="desktop-picture"><source type="image/webp" srcset="https://cdn0-a.production.images.static6.com/0LibEGFC4tb7zTII8qQ5E6uUnng=/751x423/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/946/infobdg-627519.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/OvU9IxSrOJZkYpJEsrWiH51fYEc=/1502x846/smart/filters:quality(75):format(webp)/vidio-media-production/uploads/headline/image/946/infobdg-627519.jpg 2x" /><img src="https://cdn0-a.production.images.static6.com/OnXS1LSLUmnY0uC8yPdIaK6oaQg=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/946/infobdg-627519.jpg" srcset="https://cdn0-a.production.images.static6.com/OnXS1LSLUmnY0uC8yPdIaK6oaQg=/751x423/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/946/infobdg-627519.jpg 1x,
+                            https://cdn1-a.production.images.static6.com/QZedf7DHPL2Bb1bI6hr9nYPslqc=/1502x846/smart/filters:quality(75)/vidio-media-production/uploads/headline/image/946/infobdg-627519.jpg 2x" class="headline-tron__image desktop-picture__img" data-id="946" /></picture>
+                        </script>
+                	</div>
+                </article><!-- /header -->
+                <main class="clearfix" id="main">
+                	<div class="video-grid featured-videos featured-videos" data-component="HomepageFeaturedTrending" data-name="featured" id="featured-videos-parent">
+                		<div class="video-grid__container">
+                            <h2 class="video-grid__title"><a class="title title-featured-video" href="/ranks">VIDIO PILIHAN</a></h2>
+                        </div>
+                        <div class="video-grid">
+                        	<div class="grid-4">
+                        		<div class="video-widget ga-row-1 " data-item-type="pinned" data-position="1" data-video-id="680821" data-video-username="lifestyle">
+                        			<div class="video-widget__thumbnail frame" data-count="3" data-start="1" data-url="https://cdn0-a.production.vidio.static6.com/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-320x180">
+                                        <a data-title="Saat Menteri Susi Main Cubit-cubitan Sama Sri Mulyani, Gemes Banget Sih!" data-event="ctr_tracker" data-name="featured" class="video-widget__thumbnail-link" href="/watch/680821-saat-menteri-susi-main-cubit-cubitan-sama-sri-mulyani-gemes-banget-sih">
+                                            <picture class="ui-cover-image">
+                                                <source srcset="https://cdn1-a.production.images.static6.com/7R441HRJKDBDqXX3SKaMC3H5YbY=/233x132/smart/filters:quality(80):format(webp)/vidio-media-production/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-640x360-00001.jpg 1x, https://cdn1-a.production.images.static6.com/O6IB4ImjdQyjNX3XZrG0r1hWI1Q=/466x264/smart/filters:quality(80):format(webp)/vidio-media-production/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-640x360-00001.jpg 2x" type="image/webp" />
+                                                <img src="https://cdn1-a.production.images.static6.com/J4f35nogYUpabm1YGsvEehuq_gc=/233x132/smart/filters:quality(80)/vidio-media-production/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-640x360-00001.jpg" onerror="img_onerror(this)" data-title="Saat Menteri Susi Main Cubit-cubitan Sama Sri Mulyani, Gemes Banget Sih!" alt="Saat Menteri Susi Main Cubit-cubitan Sama Sri Mulyani, Gemes Banget Sih!" class="video-widget__thumbnail-image" srcset="https://cdn1-a.production.images.static6.com/J4f35nogYUpabm1YGsvEehuq_gc=/233x132/smart/filters:quality(80)/vidio-media-production/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-640x360-00001.jpg 1x, https://cdn1-a.production.images.static6.com/rcS5E8XiWQ7keCq8KEOVxcKFpBk=/466x264/smart/filters:quality(80)/vidio-media-production/uploads/680821/images/17641440_1658782664426578_3726982884993531904_n-0a09-640x360-00001.jpg 2x" />
+                                            </picture>
+                                            <div class="video-widget__duration">00:31</div>
+                                        </a>
+                                    </div>
+                        		</div>
+                        	</div>
+                        </div>
+                	</div><!-- /video-grid featured-videos featured-videos #featured-videos-parent -->
+                </main><!-- /clearfix #main -->
+			</div>
+		</div><!-- /content-column -->
+	</div><!-- /#main-container -->
 
 	<!-- ===== JS ===== -->
     <script src="js/jquery.min.js"></script>
@@ -47,5 +201,9 @@
 
     <!-- Js Common -->
     <script src="js/common.js"></script>
+
+    <p class="hide">
+    	HSBC_TG_[Số CMND]_[Mã đơn hàng] -- HSBC_TG_123456789_XXX gửi 6089.
+    </p>
 </body>
 </html>
