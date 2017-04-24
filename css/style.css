@@ -1,14 +1,177 @@
-header#navbar {
-    position: fixed;
+@charset "utf-8";
+/* CSS Document */
+
+/*==========*/
+/*  
+    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+    Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+  
+/*==========*/
+
+/*===== Import Files =====*/
+/* Fonts */
+@font-face {
+    font-family: 'proxima_nova';
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-bold-webfont-308d6f50b8564ea093b2ab507065a527f5f0bd5fe4766122af67b6405a4f3f12.eot);
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-bold-webfont-308d6f50b8564ea093b2ab507065a527f5f0bd5fe4766122af67b6405a4f3f12.eot?#iefix) format("embedded-opentype"), url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-bold-webfont-min-aa621f59dbb19e1ae6683faea90eb263f48e60fa2701579d1cdf6a48e9fbdca5.woff) format("woff"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-bold-webfont-min-acc3e45a20cd75e7f83ca06140f3b23e7fdf5558fb6d97b99673580067a7ec96.ttf) format("truetype"), url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-bold-webfont-min-d2fefb5c56f4a3dbfaaa13ef1d38493a91c85953b6923b4b88f3d7acc3372f75.svg#proxima_nova_rgbold) format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+@font-face {
+    font-family: 'proxima_nova';
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-extrabold-webfont-ec6473975fc2e71f5c94feb3c1bc9403a5a288e034fb8275b2e64c87270dbd98.eot);
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-extrabold-webfont-ec6473975fc2e71f5c94feb3c1bc9403a5a288e034fb8275b2e64c87270dbd98.eot?#iefix) format("embedded-opentype"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-extrabold-webfont-min-19ae8ac71e740d2816c877726e6f58d28174cd58af8a80f80c8b388a0adadd96.woff) format("woff"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-extrabold-webfont-min-78b93bcccbeef50ab190f0bb3f1f745625874a1494d331028dc606e08e85e1b1.ttf) format("truetype"), url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-extrabold-webfont-min-47d205b7085758b00d34c68e83a4922ef214ccf29da1db55a969711efe6325f2.svg#proxima_novaextrabold) format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+@font-face {
+    font-family: 'proxima_nova';
+    src: url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-regular-webfont-684f152018383ca69a7a650526acb788d66f82f948f8c88a771ac6ae5023cea0.eot);
+    src: url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-regular-webfont-684f152018383ca69a7a650526acb788d66f82f948f8c88a771ac6ae5023cea0.eot?#iefix) format("embedded-opentype"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-regular-webfont-min-4236f8e414c44d67ea5a245f58a0ad0efc54aacefa8c1f24c2ad7909e6b7756b.woff) format("woff"), url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-regular-webfont-min-ec9126c44f9e74574e774e207efa529c32a650e3b0d5f231b698efb2502f1000.ttf) format("truetype"), url(https://cdn1-a.production.vidio.static6.com/assets/proxima-nova-regular-webfont-min-0a9f7615e61965260c33b8b533a1fffb888a6ec934827c1a0d97082162f41ec1.svg#proxima_nova_rgregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: 'proxima_nova';
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-semibold-webfont-82429205c79066ae3e3ec48d399afbba6393ca8b0f0f0bd10836ea42e03f269e.eot);
+    src: url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-semibold-webfont-82429205c79066ae3e3ec48d399afbba6393ca8b0f0f0bd10836ea42e03f269e.eot?#iefix) format("embedded-opentype"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-semibold-webfont-min-012f4ef8c7eaab416a717881fccfc6698c5f37f1905eefbd0f5cb7920ff84723.woff) format("woff"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-semibold-webfont-min-d4cbaf9d56247ef561af3b39802166b91ad6df6fab5924208d412070ed843913.ttf) format("truetype"), url(https://cdn0-a.production.vidio.static6.com/assets/proxima-nova-semibold-webfont-min-50cdeca943ad4f85774a08d25cb7c22956e85068937869127f450b9f72adf823.svg#proxima_novasemibold) format("svg");
+    font-weight: 600;
+    font-style: normal
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(https://cdn1-a.production.vidio.static6.com/assets/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot);
+    src: url(https://cdn1-a.production.vidio.static6.com/assets/glyphicons-halflings-regular-13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot?#iefix) format("embedded-opentype"), url(https://cdn1-a.production.vidio.static6.com/assets/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff) format("woff"), url(https://cdn1-a.production.vidio.static6.com/assets/glyphicons-halflings-regular-e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456.ttf) format("truetype"), url(https://cdn0-a.production.vidio.static6.com/assets/glyphicons-halflings-regular-42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5.svg#glyphicons_halflingsregular) format("svg")
+}
+
+/* Import Css */
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+
+/*===== Layout Style =====*/
+html {
+    box-sizing: border-box
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit
+}
+body {
+    -webkit-font-feature-settings: "kern", "liga", "pnum";
+    -ms-font-feature-settings: "kern", "liga", "pnum";
+    font-feature-settings: "kern", "liga", "pnum";
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1em;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    background: #fafafa;
+    word-break: break-word;
+}
+a {
+    color: #EF423C;
+    text-decoration: none;
+    -webkit-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+    text-decoration: none
+}
+a:active,
+a:focus,
+a:hover {
+    color: #ce1711
+}
+a:active,
+a:focus {
+    outline: none
+}
+select:focus, button:focus, input:focus { outline: none; }
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+    padding: 8px 10px;
     width: 100%;
+    border: none;
+    cursor: pointer;
 }
-.sidebar__menu-row--collapsible:hover .sidebar__section-column {
-    display: block;
-    border-left: 0;
-    width: 340px;
-    position: fixed;
-    left: 250px;
-    top: 101px;
-    height: 100%;
-    z-index: 2114;
+ul,
+ol {
+    margin: 0;
+    padding: 0;
 }
+ul li,
+ol li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: normal
+}
+h1 {
+    font-size: 24px
+}
+h2 {
+    font-size: 18px
+}
+h3 {
+    font-size: 16px
+}
+h4 {
+    font-size: 14px
+}
+h5 {
+    font-size: 13px
+}
+h6 {
+    font-size: 12px
+}
+p {
+    margin: 0 0 0.75em
+}
+hr {
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 1.5em 0
+}
+img,
+picture {
+    margin: 0;
+    max-width: 100%
+}
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.clearfix { clear: both; }
+::-webkit-scrollbar {
+    width: 9px
+}
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #ddd
+}
+
+/*===== Header =====*/
