@@ -5,7 +5,7 @@
 <!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
 <!--[if IE 10 ]><html dir="ltr" lang="en-US" class="no-js ie ie10 lte10"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en">
+<html lang="en" class="fonts-loaded">
 <!--<![endif]-->
 
 <head>
@@ -20,6 +20,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- ===== Style CSS ===== -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/style_css.css"> -->
 	<!-- ===== JS PAGE ===== -->
 	<!-- <script src="js/1.js"></script> -->
@@ -40,7 +41,7 @@
 	<div class="overlay"></div>
 	<div class="fauxcolumn"></div>
 
-	<header class="site-header container-fluid main-menu" id="navbar">
+	<header class="site-header container-fluid main-menu" id="navbar" style="position: fixed;width: 100%;">
 		<div class="site-header_container">
 			<div class="site-header_left">
 				<div class="site-header_logo">
@@ -56,7 +57,7 @@
 				<div class="category">
 					<div class="category_root js-mega-menu_handle invisible" id="browse_categories">Category&ensp;<span class="caret-close"></span></div>
 					<div class="category_wrapper">
-                        <nav class="category_nav js-mega-menu">
+                        <nav class="category_nav js-mega-menu" style="overflow: visible;">
                             <ul class="category_nav_list" style="width: 960px; position: relative;">
                                 <li><a class="category_nav_list_item category_nav_list_livestreaming" href="#">LIVE</a></li>
                                 <li><a class="category_nav_list_item" href="/">Home</a></li>
@@ -83,14 +84,56 @@
                     </div>
 				</div><!-- /category -->
 			</div><!-- /site-header_left -->
-			<div class="site-header_center">
-				<div class="site-header-search">
-					
-				</div>
-			</div>
+			<div class="site-header__center">
+                <div class="site-header__search">
+                    <script>var popular_search_keywords = ["rcti", "ftv", "roman picisan", "ftv sctv", "anak sekolahan"];</script>
+                    <div itemscope="" itemtype="http://schema.org/WebSite">
+                        <meta content="https://www.vidio.com" itemprop="url" />
+                        <form id="search_form" class="main-menu__search" data-component="SearchSuggestion" itemprop="potentialAction" itemscope="itemscope" itemtype="http://schema.org/SearchAction" action="/search" accept-charset="UTF-8" method="get">
+                            <input name="utf8" type="hidden" value="&#x2713;" />
+                            <meta content="https://www.vidio.com/search?q={q}" itemprop="target" />
+                            <div class="input-group input-group-md"><input type="text" name="q" id="q" placeholder="Cari vidio disini..." class="form-control main-menu__search-input js__main-search" itemprop="query-input" required="required" pattern=".{3,70}" title="Please enter minimum 3 characters and maximum 70 characters" autofocus="autofocus" /><input class="reset-form" type="reset" /><span class="input-group-btn input-search"><button class="btn button-search pull-right main-menu__search-icon ga__search_button" style="margin-left: 0" type="submit"><i class="icon__search"></i></button></span></div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /site-header__center -->
+            <div class="site-header_right">
+                <div class="site-header_user-upload">
+                	<a class="ga-site-header_user-upload-button site-header_user-upload-button site-header_upload-button" rel="nofollow" href="#">Unggah</a>
+            		<a class="site-header_user-upload-login site-header_login-button" id="site-header_user-upload-login" rel="nofollow" href="#">Sign in</a></div>
+            </div><!-- /site-header__right -->
 		</div>
 	</header><!-- /header -->
 
+	<div class="container-fluid clearfix" id="main-container">
+		<div id="content-column">
+			<div class="site-content" id="article-container">
+				<div class="livestreaming-notification hide-me" data-component="LivestreamingNotification">
+                    <a class="livestreaming-notification-content" href="#">
+                        <span class="livestreaming-notification_icon"></span>
+                        <div class="livestreaming-notification-content_text"></div>
+                    </a>
+                    <div class="livestreaming-notification-close">
+                    	<a class="livestreaming-notification-close_link" href="#"><span></span></a>
+                    </div>
+                </div><!-- /livestreaming-notification -->
+                <div class="notification" data-component="FlashNotification">
+	                <div class="notification-session_notice hide-me" role="alert"></div>
+	                <div class="notification-notice hide-me" role="alert"></div>
+	                <div class="notification-warning hide-me" role="alert"></div>
+	                <div class="notification-error hide-me" role="alert"></div>
+	                <span class="notification-close hide-me"></span>
+	            </div><!-- /notification -->
+	            <div class="mobile-notice" data-component="MobileNotice" style="display: none;"></div>
+	            <article id="header">
+	            	<div class="ad"></div>
+	            </article>
+	            <main class="clearfix" id="main">
+	            	
+	            </main>
+			</div>
+		</div>
+	</div>
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
