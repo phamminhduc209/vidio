@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="9px" width="9px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9 9"><!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+ <title>verified-red</title>
+ <desc>Created with Sketch.</desc>
+ <g id="homepage" fill-rule="evenodd" fill="none">
+  <g id="feautured-vidio" transform="translate(-260 -863)">
+   <g transform="translate(183 613)">
+    <g id="featured-vidio" transform="translate(0 53)">
+     <g id="thumb-vidio">
+      <g id="info" transform="translate(0 194)">
+       <g id="verified-oval" transform="translate(75 1)">
+        <g id="verified" transform="translate(2 2)">
+         <circle id="Oval-72" cy="4.5" cx="4.5" r="4.5" fill="#EF423C"/>
+         <path id="v" fill="#fff" d="m5.6588 2.5452c0 0.3036 0.2294 0.5453 0.5176 0.5453 0.0236 0 0.0471 0 0.0766-0.0063 0.0293 0.0806 0.0411 0.1736 0.0411 0.2789 0 0.7868-0.7588 2.15-1.6941 2.8129l0.1765-1.4808c0.1646-1.3383-0.2941-2.2181-1.3707-2.2181-0.7823 0-1.4058 0.6629-1.4058 1.4746 0 0.8178 0.6295 1.5118 1.5 1.3321l-0.1706-0.8798c-0.2941 0.0186-0.5824-0.2541-0.5824-0.6319 0-0.3471 0.2706-0.6321 0.6-0.6321 0.2941 0 0.7354 0.2169 0.6118 1.2702l-0.3117 2.5898h0.7176c1.4294-0.7125 2.6353-2.6146 2.6353-3.8785 0-0.632-0.3118-1.1215-0.8236-1.1215-0.2882 0-0.5176 0.2417-0.5176 0.5452"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
