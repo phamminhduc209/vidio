@@ -85,7 +85,8 @@ a {
 a:active,
 a:focus,
 a:hover {
-    color: #ce1711
+    color: #ce1711;
+    text-decoration: none;
 }
 a:active,
 a:focus {
@@ -1117,6 +1118,59 @@ main#main, article#header, article#footer {
 .video-widget_comment-count {
     color: #84909f;
     font-size: 11px;
+}
+
+/*===== Banner Content =====*/
+.banner-content {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    background: #fff;
+    padding: 15px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+.banner-content>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+.banner-content_image {
+    width: 10%;
+}
+.banner-content_content {
+    width: 59%;
+    padding: 0 15px;
+}
+.banner-content_title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: #333;
+}
+.banner-content_desc {
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+.banner-content_button {
+    width: 30%;
+    background: #f43521;
+    border-radius: 3px;
+    width: 271px;
+    height: 53px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 13px;
+    text-transform: uppercase;
+}
+.video-grid_title-right {
+    float: right;
+}
+.video-grid_title-link {
+    font-size: 14px;
+    color: #999;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /*===== Sidebar =====*/
