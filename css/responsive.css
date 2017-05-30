@@ -2,6 +2,13 @@
 	#main-container {
 	    background-image: none;
 	}
+	.sidebar {
+	    display: none;
+	    box-shadow: 5px 7px 15px 5px rgba(0,0,0,0.15);
+	}
+	.footer {
+	    display: none;
+	}
 	#article-container {
 	    margin-left: 0;
 	}
