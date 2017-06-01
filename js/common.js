@@ -27,10 +27,10 @@
 	});
 
 	// Set width and location fixed for button ranking navigation
-	function setStickyNavigation(){
-		var e = $("#video-ranking-header").width() + 90;
-		var	t = $(window).height() / 2;
-		$(".ranking_navigation").css("width", e), $(".ranking_navigation").css("top", t);
-	};
+	var e = $("#video-ranking-header").width() + 90;
+	var	t = $(window).height() / 2;
+	$(".ranking_navigation").css("width", e), $(".ranking_navigation").css("top", t);
+
+	
 
 })(jQuery); // End of use strict
