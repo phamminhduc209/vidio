@@ -2343,6 +2343,164 @@ body.categories.index .col-sm-3.col-xs-6 {
     overflow-y: hidden;
 }
 
+/*===== Profile =====*/
+.user-header {
+    margin: 20px auto 0;
+    position: relative;
+    border-radius: 0 0 3px 2px;
+    background: white;
+    max-width: 1000px;
+}
+.user-header_content {
+    padding: 0 25px;
+    margin: 0 auto 0;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+}
+.user-header_content--wrap {
+    margin-top: -35px;
+}
+.user-header_info {
+    overflow: hidden;
+    position: relative;
+}   
+/*.user-header_avatar {
+    margin-top: 45px;
+}*/
+.user-header_avatar-image-container .user-avatar-role_frame--72 {
+    height: 72px;
+    top: 15px;
+}
+.user-avatar-role_role {
+    background-image: url("../images/icn_verify.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+}
+.user-header_avatar-image-container .user-avatar-role_role {
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    box-shadow: 0px 5px 10px -6px rgba(0,0,0,0.5);
+    border: 2px solid #fff;
+}
+.user-avatar-role_image {
+    border-radius: 100%;
+    display: inline-block;
+}
+.user-header_avatar-image-container img.user-avatar-role_image, .user-header_avatar-image-container .user-avatar-role_initial {
+    width: 72px;
+    height: 72px;
+    line-height: 69px;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 15px -6px rgba(0,0,0,0.25);
+    font-size: 36px;
+}
+.display_container {
+    float: left;
+    padding-left: 20px;
+}
+.user-header_display-name {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 45px;
+    line-height: 1.25;
+    z-index: 1;
+}
+.user-header_value-name {
+    padding-right: 5px;
+}
+.user-header_username {
+    color: #999;
+    position: relative;
+}
+.user-actions {
+    float: right;
+    margin-top: 50px;
+}
+
+.watch-votable-actions--space, .social-share-toggle {
+    margin-right: 15px;
+    display: inline-block;
+}
+.button-sleek, .btn--comments, .button-sleek--action {
+    background: #f2f2f2;
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #e0e0e0);
+    background-image: linear-gradient(to bottom, #f2f2f2, #e0e0e0);
+    border: solid #ababab 1px;
+    border-radius: 2px;
+    color: #575757;
+    font-weight: 700;
+    font-size: 12px;
+    height: 32px;
+    display: inline-block;
+    line-height: 20px;
+    padding: 6px 15px 4px;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar-nav>li>a, .nav>li>a, .tabs>li>a, .button-sleek, .btn--comments, .button-sleek--action {
+    padding: 6px 15px 4px;
+}
+.button-sleek.user-header_button-share, .user-header_button-share.btn--comments, .user-header_button-share.button-sleek--action {
+    position: relative;
+    margin-left: 10px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.button-sleek.user-header_button-share:before, .user-header_button-share.btn--comments:before, .user-header_button-share.button-sleek--action:before {
+    content: url("../images/icon__share.svg");
+    display: inline-block;
+    margin: 0px 5px 0 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+}
+.social-share-buttons {
+    position: absolute;
+    display: none;
+}
+.social-modal_item-container {
+    padding: 25px;
+}
+.social-modal_item-container:nth-child(even) {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.social-modal_item-body {
+    font-weight: 600;
+    display: block !important;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    padding-left: 80px;
+}
+.share {
+    background-repeat: no-repeat;
+    display: inline-block;
+    min-height: 24px;
+    min-width: 24px;
+}
+.share--facebook {
+    background-image: url("../images/fb-big.png");
+    background-size: contain;
+}
+.share--twitter {
+    background-image: url("../images/tw-big.png");
+    background-size: contain;
+}
+.share--google-plus {
+    background-image: url("../images/gplus-big.png");
+    background-size: contain;
+}
+
 /*===== Back To Top =====*/
 .td-scroll-up {
   cursor: pointer;

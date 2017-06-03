@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if IE 10 ]><html dir="ltr" lang="en-US" class="no-js ie ie10 lte10"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="fonts-loaded">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contests</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- ===== Style CSS ===== -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<link href='css/animations-ie-fix.css' rel='stylesheet'>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="users show">
+	
+	<div class="overlay"></div>
+	<div class="fauxcolumn"></div>
+
+	<header class="site-header container-fluid main-menu" id="navbar" style="position: fixed;width: 100%;">
+		<div class="site-header_container">
+			<div class="site-header_left">
+				<div class="site-header_logo">
+					<div class="nav-trigger">
+						<a class="nav-trigger_link" href="#"><span class="nav-trigger_bar icon_bar"></span></a>
+					</div><!-- /nv-trigger -->
+					<div class="vidio-logo">
+						<a href="/">
+							<img alt="" class="vidio-logo_image" src="images/logo.png" alt="">
+						</a>
+					</div><!-- /vidio-logo -->
+				</div><!-- /site-header_logo -->
+				<div class="category">
+					<div class="category_root js-mega-menu_handle invisible" id="browse_categories">Category&ensp;<span class="caret-close"></span></div>
+					<div class="category_wrapper">
+                        <nav class="category_nav js-mega-menu" style="overflow: visible;">
+                            <ul class="category_nav_list" style="width: 960px; position: relative;">
+                                <li><a class="category_nav_list_item category_nav_list_livestreaming category_nav_list_item-active" href="#">LIVE</a></li>
+                                <li><a class="category_nav_list_item" href="/">Home</a></li>
+                                <li><a class="category_nav_list_item" href="#">Entertainment</a></li>
+                                <li><a class="category_nav_list_item" href="#">News</a></li>
+                                <li><a class="category_nav_list_item" href="#">Sports</a></li>
+                                <li><a class="category_nav_list_item" href="#">Vlog</a></li>
+                                <li><a class="category_nav_list_item" href="#">Music</a></li>
+                                <li><a class="category_nav_list_item" href="#">Funny</a></li>
+                                <li><a class="category_nav_list_item" href="#">Sinetron</a></li>
+                                <li class="hideshow dropdown more">
+                                    <a href="#" class="morenav-hover">More <span class="caret-close"></span></a>
+                                    <ul class="morenav-hover_menu">
+                                        <li><a class="category_nav_list_item" href="#">Film &amp; Series</a></li>
+                                        <li><a class="category_nav_list_item" href="#">Horror</a></li>
+                                        <li><a class="category_nav_list_item" href="#">Lifestyle</a></li>
+                                        <li><a class="category_nav_list_item" href="#">Film &amp; Series</a></li>
+                                        <li><a class="category_nav_list_item" href="#">Kids</a></li>
+                                        <li><a class="category_nav_list_item" href="#">Webtoon</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+				</div><!-- /category -->
+			</div><!-- /site-header_left -->
+			<div class="site-header__center">
+                <div class="site-header__search">
+                    <script>var popular_search_keywords = ["rcti", "ftv", "roman picisan", "ftv sctv", "anak sekolahan"];</script>
+                    <div itemscope="" itemtype="http://schema.org/WebSite">
+                        <meta content="https://www.vidio.com" itemprop="url" />
+                        <form id="search_form" class="main-menu__search" data-component="SearchSuggestion" itemprop="potentialAction" itemscope="itemscope" itemtype="http://schema.org/SearchAction" action="/search" accept-charset="UTF-8" method="get">
+                            <input name="utf8" type="hidden" value="&#x2713;" />
+                            <meta content="https://www.vidio.com/search?q={q}" itemprop="target" />
+                            <div class="input-group input-group-md"><input type="text" name="q" id="q" placeholder="Cari vidio disini..." class="form-control main-menu__search-input js__main-search" itemprop="query-input" required="required" pattern=".{3,70}" title="Please enter minimum 3 characters and maximum 70 characters" autofocus="autofocus" /><input class="reset-form" type="reset" /><span class="input-group-btn input-search"><button class="btn button-search pull-right main-menu__search-icon ga__search_button" style="margin-left: 0" type="submit"><i class="icon__search"></i></button></span></div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- /site-header__center -->
+            <div class="site-header_right">
+                <div class="site-header_user-upload">
+                	<a class="ga-site-header_user-upload-button site-header_user-upload-button site-header_upload-button" rel="nofollow" href="#">Unggah</a>
+            		<a class="site-header_user-upload-login site-header_login-button" id="site-header_user-upload-login" rel="nofollow" href="#">Sign in</a></div>
+            </div><!-- /site-header__right -->
+		</div>
+	</header><!-- /header -->
+
+	<div class="container-fluid clearfix" id="main-container">
+		<div id="content-column">
+			<div class="site-content" id="article-container">
+				<div class="livestreaming-notification hide-me" data-component="LivestreamingNotification">
+                    <a class="livestreaming-notification-content" href="#">
+                        <span class="livestreaming-notification_icon"></span>
+                        <div class="livestreaming-notification-content_text"></div>
+                    </a>
+                    <div class="livestreaming-notification-close">
+                    	<a class="livestreaming-notification-close_link" href="#"><span></span></a>
+                    </div>
+                </div><!-- /livestreaming-notification -->
+
+                <div class="notification" data-component="FlashNotification">
+	                <div class="notification-session_notice hide-me" role="alert"></div>
+	                <div class="notification-notice hide-me" role="alert"></div>
+	                <div class="notification-warning hide-me" role="alert"></div>
+	                <div class="notification-error hide-me" role="alert"></div>
+	                <span class="notification-close hide-me"></span>
+	            </div><!-- /notification -->
+
+	            <div class="mobile-notice" data-component="MobileNotice" style="display: none;"></div>
+
+	            <article id="header">
+	            	<div class="user-header">
+	            		<div class="user-cover-image">
+            				<img src="images/profile/klikdokter-0015ea.jpg" alt="Klikdokter 0015ea">
+	            		</div><!-- /user-cover-image -->
+
+	            		<div class="user-header_overlay"></div><!-- /user-header__overlay -->
+
+	            		<div class="user-header_content">
+	            			<div class="user-header_content--wrap">
+	            				<div class="user-header_info">
+	            					<div class="user-header_avatar">
+	            						<div class="user-header_avatar-image-container">
+	            							<div class="user-avatar-role_frame user-avatar-role_frame--72">
+	            								<div class="user-avatar-role_role user-avatar-role_role--72"></div>
+	            								<picture>
+	            									<img src="images/profile/klikdokter-4721fa.jpg" class="user-avatar user-avatar-role_image user-avatar-role_image--72" title="">
+	            								</picture>
+	            							</div>
+	            						</div>
+	            					</div><!-- /user-header_avatar -->
+	            					<div class="display_container">
+	            						<h1 class="user-header_display-name"><div class="user-header_value-name">Klikdokter.com</div></h1>
+	            						<span class="user-header_username">@klikdokter</span>
+	            					</div><!-- /display_container -->
+	            					<div class="user-actions">
+            							<a class="button-follow" data-follow-content="Ikuti" href="#"></a>
+            							<a class="social-share-toggle button-sleek user-header_button-share" href="#">Bagikan</a>
+            							<div class="social-share-buttons">
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--facebook social-modal_item-body" href="#">Facebook</a>
+            								</div>
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--twitter social-modal_item-body" href="#">Twitter</a>
+            								</div>
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--google-plus social-modal_item-body" href="">Google+</a>
+            								</div>
+            							</div>
+            						</div><!-- /user-actions -->
+	            				</div>
+	            			</div>
+	            		</div><!-- /#user-header__content -->
+	            	</div>
+	            </article><!-- /#header -->
+
+	            <main class="clearfix" id="main">
+	            	
+	            </main><!-- /main -->
+
+	            <article id="footer" class="hide">
+	            	<div class="ad"></div>
+	            </article>
+			</div>
+		</div><!-- /content-column -->
+
+		<div class="sidebar js-sidebar-adjust" id="left-column">
+			<div class="sidebar_login">
+				<a class="ga_login-button login-button button button_sleek is-uppercase" href="#">
+					<span class="translation_missing" title="">Login</span>
+				</a>
+				<a class="ga_register-button button button_sleek is-uppercase" href="#">
+					<span class="translation_missing" title="">Register</span>
+				</a>
+			</div><!-- /sidebar_login -->
+			<ul class="sidebar_section">
+				<li class="sidebar_section-row">
+					<ul class="sidebar_menu">
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_home" href="#">Beranda</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_categories" href="#">Kategori</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_livestreamings" href="#">Live</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_ranking" href="#">Peringkat</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_contests" href="#">Kontes</a></li>
+						<li class="sidebar_menu-row-collapsible">
+							<a class="sidebar_menu-url sidebar_menu-url-collapsible sidebar_menu_link sidebar_recommended-users visible" href="#">Rekomendasi User</a>
+							<div class="sidebar_section-column">
+								<h3 class="sidebar_section-group">Recommended Users</h3>
+								<ul class="sidebar-recommended-user_list">
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+									<li class="sidebar-recommended-user_item">
+										<a class="sidebar-recommended-user_link" href="#">
+                                            <picture>
+                                                <img src="images/avata_menu/35x35.jpg" data-title="bujangdotnet" alt="bujangdotnet" height="35" width="35" class="user-avatar sidebar-recommended-user_avatar" srcset="images/avata_menu/35x35.jpg 1x, images/avata_menu/70x70.jpg 2x">
+                                            </picture>
+                                            <span class="user-name sidebar-recommended-user_name">bujangdotnet</span>
+                                        	<span class="verified-user verified-user-small" title=""></span>
+                                        </a>
+                                        <a class="button-follow sidebar-recommended-user_follow spec_button-follow-sidebar" data-follow-content="Ikuti" href="#"></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="sidebar_menu-row-collapsible">
+							<a class="sidebar_menu-url sidebar_menu-url-collapsible sidebar_menu_link sidebar_recommended-users visible" href="#">Rekomendasi Koleksi</a>
+							 <div class="sidebar_section-column">
+							 	<h3 class="sidebar_section-group"><span class="translation_missing" title="">Collections</span></h3>
+							 	<a class="sidebar_section-group-right" href="#">+ Lainnya</a>
+							 	<ul class="sidebar_menu">
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sidebar_menu-collections">
+                                        <div class="collection-widget channel-spec collection-widget-sidebar">
+                                            <div class="collection-widget_container">
+                                                <div class="collection-widget_thumbnail channel-spec_thumbnail">
+                                                    <a class="collection-widget_thumbnail-link " data-username="bintang" data-collection-name="Bintang 1 Menit" target="_self" href="#">
+                                                        <picture class="desktop-picture">
+                                                            <img src="images/avata_menu/123x123.jpg" srcset="images/avata_menu/123x123.jpg, images/avata_menu/246x246.jpg 2x" class="desktop-picture_img" alt="" />
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="collection-widget_content">
+                                                    <div class="collection-widget_heading">
+                                                        <h3 class="collection-widget_heading-title"><a class="collection-widget_heading-title-link " href="#">Bintang 1 Menit</a></h3>
+                                                    </div>
+                                                    <div class="collection-widget_meta"><span class="collection-widget_meta-author">by&nbsp;<a class="collection-widget_user-link" href="#">Bintang.com</a></span></div>
+                                                    <div class="collection-widget_video">
+                                                        <ul class="collection-widget_videolist">
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Sarwendah dan Daster Cinta" class="collection-widget_videolist-item-link" data-username="bintang" href="#">Sarwendah dan Daster Cinta</a>
+                                                            </li>
+                                                            <li class="collection-widget_videolist-item">
+                                                            	<a title="Mulan Jameela Penjual Cilok Paling Kece" class="collection-widget_videolist-item-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Mulan Jameela Penjual Cilok Paling Kece</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="collection-widget_more">
+                                                        	<a class="collection-widget_more-link" data-username="bintang" data-collection-name="Bintang 1 Menit" href="#">Lihat semua isi koleksi (17 vidio)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                               </ul>
+							 </div>
+						</li>
+					</ul>
+				</li>
+			</ul><!-- /sidebar_section -->
+			<div class="sidebar_section">
+				<div class="sidebar_section sidebar_section-connect">
+					<h3 class="sidebar_section-connect-title no-border">Connect</h3>
+					<a class="sidebar_section-connect_item sidebar_section-connect_item-twitter" target="_blank" href="#">Twitter</a>
+					<a class="sidebar_section-connect_item-facebook sidebar_section-connect_item" target="_blank" href="#">Facebook</a>
+				</div>
+			</div><!-- /sidebar_section -->
+		</div><!-- /left-column -->
+
+		<footer class="footer site-footer">
+            <div class="site-footer_copyright">Hak Cipta 2017 <span><a href="/">vidio.com</a></span>.</div>
+            <ul class="site-footer_menu">
+                <li class="site-footer_menu-item"><a data-title="Terms of Use" class="site-footer_menu-link" href="#">Ketentuan Penggunaan</a></li>
+                <li class="site-footer_menu-item"><a data-title="Sitemap" class="site-footer_menu-link" href="#">Peta Situs</a></li>
+                <li class="site-footer_menu-item"><a data-title="Help" class="site-footer_menu-link" href="#">Bantuan</a></li>
+                <li class="site-footer_menu-item"><a data-title="Careers" class="site-footer_menu-link" target="_blank" href="#">Karir</a></li>
+            </ul>
+            <div class="site-footer_language" data-component="SwitchLanguage">
+                <div class="site-footer_language-button"><a href="#">Bahasa Indonesia</a></div>
+                <div class="site-footer_language-table hide-me">
+                    <div class="ga_switch-to-indonesia site-footer_language-choice site-footer_language-choice--active"><a class="site-footer_language-choice-indonesia" href="#">Bahasa Indonesia</a></div>
+                    <div class="ga_switch-to-english site-footer_language-choice "><a class="site-footer_language-choice-english" href="#">English</a></div>
+                </div>
+            </div>
+        </footer><!-- /footer site-footer -->
+	</div><!-- /#main-container -->
+
+	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
+  		<img src="images/arrow-up.png" alt="Arrow up">
+	</a>
+	<!-- Return To Top -->
+
+	<!-- ===== JS ===== -->
+	<script src="js/jquery.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<!-- sticky -->
+	<script src="vendor/sticky/jquery.sticky.js"></script>
+	<!-- Js Common -->
+	<script src="js/common.js"></script>
+	<!-- <script src="js/2.js"></script> -->
+
+	<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
+
+</body>
+</html>
