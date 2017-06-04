@@ -129,7 +129,7 @@
             				<img src="images/profile/klikdokter-0015ea.jpg" alt="Klikdokter 0015ea">
 	            		</div><!-- /user-cover-image -->
 
-	            		<div class="user-header_overlay"></div><!-- /user-header__overlay -->
+	            		<div class="user-header_overlay"></div><!-- /user-header_overlay -->
 
 	            		<div class="user-header_content">
 	            			<div class="user-header_content--wrap">
@@ -165,12 +165,70 @@
             						</div><!-- /user-actions -->
 	            				</div>
 	            			</div>
-	            		</div><!-- /#user-header__content -->
+	            		</div><!-- /#user-header_content -->
+
+	            		<nav class="user-profile-nav">
+	            			<ul class="list-unstyled">
+	            				<li class="spec-nav_user-link active">
+	            					<a class="spec-profile-nav_home user-header-nav_home-link" href="#" title=""><span>Beranda</span></a>
+	            				</li>
+	            				<li class="spec-nav_user-videos">
+	            					<a class="spec-profile-nav_videos user-header-nav_videos-link" href="#" title="">
+	            						<span>Vidio</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_published-videos">45</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-channels ">
+	            					<a class="spec-profile-nav_channel user-header-nav_collection-link" href="#" title="">
+	            						<span>Koleksi</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_total-channels">1</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-followers ">
+	            					<a class="spec-profile-nav_follower follow-count user-header-nav_followers-link" href="#" title="">
+	            						<span>Pengikut</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_follower-count">25,9K</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-following ">
+	            					<a class="spec-profile-nav_following follow-count user-header-nav_following-link" href="#" title="">
+	            						<span>Diikuti</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_following-count">0</span>
+	            					</a>
+	            				</li>
+	            			</ul>
+	            		</nav>
 	            	</div>
 	            </article><!-- /#header -->
 
 	            <main class="clearfix" id="main">
-	            	
+	            	<div class="headline-video">
+	            		<div class="headline-video_player">
+	            			<div class="player-loader"></div>
+	            			<div class="video-only vjs-container">
+								<!-- <video autobuffer autoloop loop controls>
+									
+								</video> -->
+	            			</div>
+	            		</div><!-- /headline-video_player -->
+	            		<div class="headline-video_details">
+	            			<header>
+	            				<h3><a href="#">Manfaat Sarapan yang Tak Boleh Diabaikan</a></h3>
+	            				<span class="video-plays-count count"><span class="video-plays-count-value">266</span> Diputar</span>
+	            			</header><!-- /header -->
+	            			<div class="headline-video_content js-autolink">
+	            				Jangan menganggap remeh sarapan! Ada banyak sekali manfaat yang bisa diperoleh dari makan pada pagi hari. Apa saja?
+	            			</div><!-- /headline-video_content -->
+	            			<footer>
+	            				<div class="watch-video-actions">
+	            					<a href="javascript:void(0)" title="" class="spec_love_button love_wrapper next-share watch-votable-actions--space vote-button">
+	            						<span class="love_icon watch-video-actions_icon love_icon_inactive"></span>
+	            						<span class="like_count likes-count count-0 votes">0</span>
+	            					</a>
+	            				</div>
+	            			</footer><!-- /footer -->
+	            		</div><!-- /headline-video_details -->
+	            	</div>
 	            </main><!-- /main -->
 
 	            <article id="footer" class="hide">
@@ -1104,6 +1162,15 @@
 	<script>
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
+	})
+	$(".love_icon").click(function() {
+		if ($(this).hasClass("love_icon_inactive")) {
+			$(this).removeClass("love_icon_inactive");
+			$(this).addClass("love_icon_active");
+		}else{
+			$(this).addClass("love_icon_inactive");
+			$(this).removeClass("love_icon_active");
+		}
 	})
 	</script>
 
