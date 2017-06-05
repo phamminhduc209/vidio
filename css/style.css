@@ -3253,6 +3253,14 @@ body.users.edit .item-row h2 {
     transform: translateY(70%);
 }
 
+/* Channels Collections */
+.collection-widget_container {
+    background: #fff;
+}
+.collection-list_item {
+    margin-bottom: 2%;
+}
+
 /*===== Paginations =====*/
 .paginations {
     text-align: center;
