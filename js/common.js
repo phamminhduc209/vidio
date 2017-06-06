@@ -26,11 +26,23 @@
 		}, 'slow');
 	});
 
+	$(".site-footer_language-button a").click(function() {
+		if ($(".site-footer_language-table").hasClass("hide-me")) {
+			$(".site-footer_language-table").removeClass("hide-me");
+		}else{
+			$(".site-footer_language-table").addClass("hide-me");
+		}
+	})
+
 	// Set width and location fixed for button ranking navigation
 	var e = $("#video-ranking-header").width() + 90;
 	var	t = $(window).height() / 2;
 	$(".ranking_navigation").css("width", e), $(".ranking_navigation").css("top", t);
 
+	$(".site-footer_language-table").click(function() {
+		/* Act on the event */
+		if (".site-footer_language-table") {}
+	});
 	
 
 })(jQuery); // End of use strict

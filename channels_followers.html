@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Categories</title>
+	<title>Followers</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -31,7 +31,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="categories index">
+<body class="users followers">
 	
 	<div class="overlay"></div>
 	<div class="fauxcolumn"></div>
@@ -54,7 +54,7 @@
 					<div class="category_wrapper">
                         <nav class="category_nav js-mega-menu" style="overflow: visible;">
                             <ul class="category_nav_list" style="width: 960px; position: relative;">
-                                <li><a class="category_nav_list_item category_nav_list_livestreaming" href="#">LIVE</a></li>
+                                <li><a class="category_nav_list_item category_nav_list_livestreaming category_nav_list_item-active" href="#">LIVE</a></li>
                                 <li><a class="category_nav_list_item" href="/">Home</a></li>
                                 <li><a class="category_nav_list_item" href="#">Entertainment</a></li>
                                 <li><a class="category_nav_list_item" href="#">News</a></li>
@@ -126,113 +126,278 @@
 	            <div class="mobile-notice" data-component="MobileNotice" style="display: none;"></div>
 
 	            <article id="header">
-	            	<div class="ad"></div>
+	            	<div class="user-header">
+	            		<div class="user-cover-image">
+	            			<div class="user-header_value-cover">
+	            				<img src="images/channels/nba-089f54.jpg" alt="" class="user-header_value-cover_img">
+	            			</div>
+	            		</div><!-- /user-cover-image -->
 
+	            		<div class="user-header_overlay"></div><!-- /user-header_overlay -->
+
+	            		<div class="user-header_content">
+	            			<div class="user-header_content--wrap">
+	            				<div class="user-header_info">
+	            					<div class="user-header_avatar">
+	            						<div class="user-header_avatar-image-container">
+	            							<div class="user-avatar-role_frame user-avatar-role_frame--72">
+	            								<div class="user-avatar-role_role user-avatar-role_role--72"></div>
+	            								<picture>
+	            									<img src="images/channels/nba-53b9bb.jpg" class="user-avatar user-avatar-role_image user-avatar-role_image--72" title="">
+	            								</picture>
+	            							</div>
+	            						</div>
+	            					</div><!-- /user-header_avatar -->
+	            					<div class="display_container">
+	            						<h1 class="user-header_display-name"><div class="user-header_value-name">NBA</div></h1>
+	            						<span class="user-header_username">@nba</span>
+	            					</div><!-- /display_container -->
+	            					<div class="user-actions">
+            							<a class="button-follow" data-follow-content="Ikuti" href="#"></a>
+            							<a class="social-share-toggle button-sleek user-header_button-share" href="#">Bagikan</a>
+            							<div class="social-share-buttons">
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--facebook social-modal_item-body" href="#">Facebook</a>
+            								</div>
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--twitter social-modal_item-body" href="#">Twitter</a>
+            								</div>
+            								<div class="social-modal_item-container">
+            									<a target="_blank" class="share share--google-plus social-modal_item-body" href="">Google+</a>
+            								</div>
+            							</div>
+            						</div><!-- /user-actions -->
+	            				</div><!-- /user-header_info -->
+	            				<div class="user-header_description">
+	            					<span class="user-header_value-description">National Basketball Association. Official home of the most compelling basketball action from the NBA</span>
+	            				</div><!-- /user-header_description -->
+	            			</div>
+	            		</div><!-- /#user-header_content -->
+
+	            		<nav class="user-profile-nav">
+	            			<ul class="list-unstyled">
+	            				<li class="spec-nav_user-link">
+	            					<a class="spec-profile-nav_home user-header-nav_home-link" href="#" title=""><span>Beranda</span></a>
+	            				</li>
+	            				<li class="spec-nav_user-videos">
+	            					<a class="spec-profile-nav_videos user-header-nav_videos-link" href="#" title="">
+	            						<span>Vidio</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_published-videos">45</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-channels">
+	            					<a class="spec-profile-nav_channel user-header-nav_collection-link" href="#" title="">
+	            						<span>Koleksi</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_total-channels">1</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-followers active">
+	            					<a class="spec-profile-nav_follower follow-count user-header-nav_followers-link" href="#" title="">
+	            						<span>Pengikut</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_follower-count">25,9K</span>
+	            					</a>
+	            				</li>
+	            				<li class="spec-nav_user-following">
+	            					<a class="spec-profile-nav_following follow-count user-header-nav_following-link" href="#" title="">
+	            						<span>Diikuti</span>
+	            						<span class="user-profile-nav_stats-count spec-stats_following-count">0</span>
+	            					</a>
+	            				</li>
+	            			</ul>
+	            		</nav>
+	            	</div>
 	            </article><!-- /#header -->
 
 	            <main class="clearfix" id="main">
-	            	<h1 style="font-size:18px;">Categories</h1>
-	            	<div class="row">
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/funny-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">FUNNY</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/music-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">MUSIC</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/news-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">NEWS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/people-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">VLOG</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
+	            	<div class="follow-box_list-count">3.629 Pengikut</div>
+	            	<div class="follow-box_list row">
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            		<div class="col-sm-6 col-xs-12 user-widget">
+	            			<div class="user-widget_wrap">
+            					<div class="user-widget_thumbnail">
+            						<a class="spec-user-widget_thumbnail" href="#">
+            							<div class="user-avatar--initial user-avatar user-widget_avatar avatar-size-110">RN</div>
+            						</a>
+            					</div>
+            					<div class="user-widget_caption">
+            						<a class="user-name user-widget_name video-user" href="">Rafi N</a>
+            						<div class="user-widget_username">
+            							<a class="user-name user-widget_username label-user" href="#">cesa.ciwek</a>
+            						</div>
+            						<div class="user-widget_meta"><span>0 Vidio - 0 Pengikut</span></div>
+            						<div class="user-widget_description"></div>
+            						<a class="button-follow spec_button-follow" data-follow-content="Ikuti" href="#"></a>
+            						<a href="#" title="" class="button-follow spec_button-follow button-follow--following" data-follow-content="">Mengikuti</a>
+            					</div>
+	            			</div>
+	            		</div><!-- /col-sm-6 col-xs-12 user-widget -->
+	            	</div><!-- /follow-box_list -->
+	            	<div class="paginations">
+	            		<span class="prev">
+	            			<span class="arrow prev"></span>
+	            		</span>
+	            		<span class="next">
+	            			<span class="arrow next">
+	            				<a rel="next" href="/users/nba/channels/10688791-highlights-nba-2017?page=2">Next Page <i class="glyphicon glyphicon-chevron-right"></i></a>
+	            			</span>
+	            		</span>
+	            	</div><!-- /paginations -->
+	            </main><!-- /#main -->
 
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/sports-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">SPORTS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/kids-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">KIDS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-						<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/entertainment-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">ENTERTAINMENT</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/webtoon-1x.png" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">WEBTOON</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/film-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">FILM &amp; SERIES</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/education-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">LIFESTYLE</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/sinetron-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">SINETRON</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/supranatural-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">HORROR</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            	</div><!-- /row -->
-	            </main><!-- /main -->
+	            <article id="footer" class="hide">
+	            	<div class="ad"></div>
+	            </article>
 			</div>
 		</div><!-- /content-column -->
 
@@ -1161,6 +1326,15 @@
 	<script>
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
+	})
+	$(".button-follow spec_button-follow").click(function() {
+		if ($(this).hasClass("love_icon_inactive")) {
+			
+			$(this).addClass("love_icon_active");
+		}else{
+			$(this).addClass("love_icon_inactive");
+			$(this).removeClass("love_icon_active");
+		}
 	})
 	</script>
 

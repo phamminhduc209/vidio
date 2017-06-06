@@ -12,16 +12,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Categories</title>
+	<title>View and share your videos</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- ===== Style CSS ===== -->
-	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +30,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="categories index">
+<body class="dashboard videos menu">
 	
 	<div class="overlay"></div>
 	<div class="fauxcolumn"></div>
@@ -91,14 +90,62 @@
                         </form>
                     </div>
                 </div>
-            </div><!-- /site-header__center -->
+            </div><!-- /site-header_center -->
             <div class="site-header_right">
                 <div class="site-header_user-upload">
                 	<a class="site-header_following-button" href="/dashboard/feeds">Following</a>
                 	<a class="ga-site-header_user-upload-button site-header_user-upload-button site-header_upload-button" rel="nofollow" href="#">Unggah</a>
-            		<a class="site-header_user-upload-login site-header_login-button" id="site-header_user-upload-login" rel="nofollow" href="#">Sign in</a>
+            		<div class="notifications site-header_tools dropdown" data-count="0" data-you-loaded="true" data-following-loaded="true" data-you-count="0" data-following-count="20">
+            			<a class="notifications_icon activity-icon site-header_notification dropdown-toggle icon_notif" data-toggle="dropdown" href="#"></a>
+            			<div class="dropdown-menu site-header_dropdown site-header_dropdown--notification">
+            				<div class="site-header_dropdown-arrow"></div>
+							<ul class="site-header_dropdown_tab-nav">
+								<li class="site-header_dropdown_tab-nav-item active">
+									<a data-toggle="tab" class="site-header_dropdown_tab-nav_link notification-menu--you" href="#activity">kamu</a>
+								</li>
+								<li class="site-header_dropdown_tab-nav-item">
+									<a data-toggle="tab" class="site-header_dropdown_tab-nav_link notification-menu--following" href="#following">Diikuti</a>
+								</li>
+							</ul><!-- /site-header_dropdown_tab-nav -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="activity">
+									<ul class="activity-list activity-list--you"></ul>
+									<a class="activity-list_more activity-list_more--you" href="#">lihat semua</a>
+								</div><!-- /#activity -->
+								<div class="tab-pane" id="following">
+									<ul class="activity-list activity-list--following following-list">
+										<li class="activity-item">
+											<a href="#" title="" class="activity-item_link  ga_notification-following-video">
+												<img src="images/notification/klikdokter-4721fa.jpg" alt="" class="activity-item_avatar">
+												<div class="activity-item_container">
+													<div class="activity-item_message">
+														<strong>Klikdokter.com</strong>
+														<span>&nbsp;</span>
+														mengunggah vidio baru
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<a class="activity-list_more activity-list_more--following ga_notification-following-see-all" href="#">lihat semua</a>
+								</div><!-- /#following -->
+							</div><!-- /tab-content -->
+            			</div>
+            		</div><!-- /notifications site-header_tools dropdown -->
+            		<div class="site-header_user-profile dropdown">
+            			<a class="dropdown-toggle site-header_user-profile-avatar site-header_user-profile-avatar_small" data-toggle="dropdown" href="#">
+            				<div class="user-avatar--initial user-avatar user-avatar--rounded" style="border-width: 1px; line-height: 24px; font-size: 10px; width: 24px">KD</div>
+            				<span class="user-avatar_name"><span class="caret-close"></span></span>
+            			</a>
+            			<ul class="dropdown-menu site-header_dropdown site-header_dropdown--user-profile">
+            				<li><a class="site-header_dropdown--user-profile_link" href="#">Profile</a></li>
+            				<li><a class="site-header_dropdown--user-feed_link" href="#">My Feed</a></li>
+            				<li><a class="site-header_dropdown--user-profile_link" href="#">Manage</a></li>
+            				<li><a class="site-header_dropdown--user-profile_link" href="#">Logout</a></li>
+            			</ul>
+            		</div>
             	</div>
-            </div><!-- /site-header__right -->
+            </div><!-- /site-header_right -->
 		</div>
 	</header><!-- /header -->
 
@@ -114,7 +161,6 @@
                     	<a class="livestreaming-notification-close_link" href="#"><span></span></a>
                     </div>
                 </div><!-- /livestreaming-notification -->
-
                 <div class="notification" data-component="FlashNotification">
 	                <div class="notification-session_notice hide-me" role="alert"></div>
 	                <div class="notification-notice hide-me" role="alert"></div>
@@ -122,129 +168,66 @@
 	                <div class="notification-error hide-me" role="alert"></div>
 	                <span class="notification-close hide-me"></span>
 	            </div><!-- /notification -->
-
 	            <div class="mobile-notice" data-component="MobileNotice" style="display: none;"></div>
-
 	            <article id="header">
 	            	<div class="ad"></div>
 
 	            </article><!-- /#header -->
-
 	            <main class="clearfix" id="main">
-	            	<h1 style="font-size:18px;">Categories</h1>
-	            	<div class="row">
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/funny-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">FUNNY</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/music-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">MUSIC</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/news-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">NEWS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/people-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">VLOG</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/sports-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">SPORTS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/kids-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">KIDS</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-						<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/entertainment-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">ENTERTAINMENT</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/webtoon-1x.png" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">WEBTOON</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/film-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">FILM &amp; SERIES</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/education-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">LIFESTYLE</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/sinetron-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">SINETRON</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            		<div class="col-sm-3 col-xs-6">
-	            			<a href="" title="" class="categories_item category-thumbnail">
-	            				<picture class="desktop-picture">
-	            					<img src="images/categories/supranatural-1x.jpg" class="category-thumbnail_image desktop-picture_img">
-	            				</picture>
-	            				<div class="category-thumbnail_text">HORROR</div>
-	            			</a>
-	            		</div><!-- /col-sm-3 col-xs-6 -->
-	            	</div><!-- /row -->
+	            	<header class="pages-header"><h1 class="page-title">Upload Vidio</h1></header>
+	            	<section class="section">
+	            		<div class="section-body">
+	            			<div class="upload-video">
+	            				<div class="upload-video_container">
+	            					<div class="upload-video--drop-area">
+	            						
+	            					</div>
+	            				</div>
+	            			</div><!-- /upload-video -->
+	            		</div>
+	            	</section>
 	            </main><!-- /main -->
 			</div>
 		</div><!-- /content-column -->
 
 		<div class="sidebar js-sidebar-adjust" id="left-column">
-			<div class="sidebar_login">
+			<!-- <div class="sidebar_login">
 				<a class="ga_login-button login-button button button_sleek is-uppercase" href="#">
 					<span class="translation_missing" title="">Login</span>
 				</a>
 				<a class="ga_register-button button button_sleek is-uppercase" href="#">
 					<span class="translation_missing" title="">Register</span>
 				</a>
-			</div><!-- /sidebar_login -->
+			</div> --><!-- /sidebar_login -->
+			<div class="sidebar_user">
+				<a class="sidebar_user-link" href="#">
+					<div class="user-avatar--initial user-avatar sidebar_user-avatar" style="border-width: 1px; line-height: 35px; font-size: 15px; width: 35px">KD</div>Ku Duc
+				</a>
+				<a data-toggle="collapse" href="#sidebar-settings"><span class="sidebar_user-caret"></span></a>
+			</div><!-- /sidebar_user -->
+			<ul class="sidebar_section sidebar_section--dark collapse in sidebar_section--login" id="sidebar-settings">
+				<li class="sidebar_section-row">
+					<ul class="sidebar_menu">
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_notifications" href="/notifications" data-count="0">Notifikasi</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_my-feed" href="/dashboard/feeds">Mengikuti</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_account-settings" href="/dashboard/setting">Pengaturan Akun</a></li>
+						<li class="sidebar_menu-row-collapsible">
+							<a class="sidebar_menu-url sidebar_menu-url-collapsible sidebar_menu_link sidebar_menu-url--manage sidebar_manage visible" href="#">Atur</a>
+							<div class="sidebar_section-column">
+								<h3 class="sidebar_section-group">Manage</h3>
+								<ul class="sidebar_menu">
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-dashboard" href="/dashboard">Dashboard</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-videos" href="/dashboard/videos">Kelola Vidio</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-collections" href="/dashboard/channels">Koleksi</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-wallet" href="/dashboard/wallet/histories">Wallet</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_histories" href="/dashboard/histories">Riwayat Tontonan</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_menu-url--logout" rel="nofollow" data-method="delete" href="/users/logout">Keluar</a></li>
+					</ul>
+				</li>
+			</ul>
 			<ul class="sidebar_section">
 				<li class="sidebar_section-row">
 					<ul class="sidebar_menu">
