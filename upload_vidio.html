@@ -40,7 +40,7 @@
 			<div class="site-header_left">
 				<div class="site-header_logo">
 					<div class="nav-trigger">
-						<a class="nav-trigger_link" href="#"><span class="nav-trigger_bar icon_bar"></span></a>
+						<a class="nav-trigger_link" href="javascript:void(0)"><span class="nav-trigger_bar icon_bar"></span></a>
 					</div><!-- /nv-trigger -->
 					<div class="vidio-logo">
 						<a href="/">
@@ -180,10 +180,183 @@
 	            			<div class="upload-video">
 	            				<div class="upload-video_container">
 	            					<div class="upload-video--drop-area">
-	            						
-	            					</div>
+	            						<form id="s3_uploader" class="upload-video_file-form" data-post="" data-as="file" enctype="multipart/form-data" action="form.php" accept-charset="UTF-8" method="post">
+											<input name="utf8" type="hidden" value="&#x2713;" />
+											<input type="hidden" name="key" id="key" value="" />
+											<input type="hidden" name="acl" id="acl" value="" />
+											<input type="hidden" name="policy" id="policy" value="" />
+											<input type="hidden" name="signature" id="signature" value="" />
+											<input type="hidden" name="AWSAccessKeyId" id="AWSAccessKeyId" value="" />
+											<input type="hidden" name="Content-Type" id="Content-Type" value="video/mp4" />
+											<input type="hidden" name="Cache-Control" id="Cache-Control" value="public; max-age=31104000" />
+											<input type="hidden" name="success_action_status" id="success_action_status" value="201" />
+											<div class="upload-video_file-form-area"></div>
+											<input type="file" name="file" id="media_file" class="upload-video_media-file" accept=".mp4, .mov, .m4v, .m4a, .m4b, .m4p, .f4v, .3gp, .3g2, .mkv, .webm, .asf, .wmv, .wma, .avi, .flv, .mpg" />
+											<input type="hidden" name="media[key]" id="media_key" />
+											<img class="upload-video--drop-area_icon" width="86" height="86" src="images/drop-icon-new.png" alt="Drop icon new" />
+											<h3 class="upload-video--drop-area_title">Drag &amp; drop or Select Vidio file</h3>
+											<p class="upload-video--drop-area_info">Make sure the Vidio size is below 500 MB<span class="hidden" id="max-file-size">524288000</span></p>
+											<p class="upload-video--drop-area_info">We only support MP4, MOV, M4V, M4B, M4P, F4V, 3GP, 3G2, MKV, WEBM, ASF, WMV, WMA, AVI, FLV, MPG files</p>
+										</form><!-- /#s3_uploader -->
+	            					</div><!-- /upload-video-drop-area -->
+	            					<ul class="upload-video--file-list">
+										<li data-index="0" class="upload-video--file-list_item">	<span class="upload-video--file-list_item-name">10975744_939235966087974_1306179273_n.mp4</span>
+											<span class="upload-video--file-list_item-size">154.1 KiB</span>
+											<a href="#" data-index="0" class="upload-video--file-list_delete"></a>
+										</li>
+									</ul><!-- /upload-video-file-list -->
+									<div class="upload-video--action">
+										<div class="upload-video_form-container">
+											<form class="upload-video_form" id="video_form" action="form_en.php" accept-charset="UTF-8" method="post">
+												<input name="utf8" type="hidden" value="✓">
+												<input type="hidden" name="authenticity_token" value="">
+												<p>
+													<label for="title">Title</label>
+													<input class="form-control upload-video--title" maxlength="200" required="required" size="200" type="text" value="10975744_939235966087974_1306179273_n" name="" id="video_title">
+													<span class="error"></span>
+												</p>
+												<p>
+													<label for="description">Description</label>
+													<textarea class="form-control video-upload_form-textarea" name="" id="video_description"></textarea>
+												</p>
+												<div class="row">
+													<div class="col-sm-12">
+														<p>
+															<label for="group">Group</label>
+															<select name="" class="form-control video-upload_form-select">
+																<option value="22">Horror</option>
+			                                                   <option value="18">Kids</option>
+			                                                   <option value="15">Sinetron</option>
+			                                                   <option value="13">Sports</option>
+			                                                   <option selected="selected" value="11">Vlog</option>
+			                                                   <option value="10">News</option>
+			                                                   <option value="9">Music</option>
+			                                                   <option value="6">Entertainment</option>
+			                                                   <option value="4">Funny</option>
+			                                                   <option value="7">Film &amp; Series</option>
+			                                                   <option value="20">Lifestyle</option>
+			                                                   <option value="26">Webtoon</option>
+			                                                   <option value="27">Korea</option>
+															</select>
+														</p>
+													</div>
+												</div>
+												<p>
+													<p>
+														<label for="tag_list">Tag</label>
+														<select name="" multiple class="select2-choices"></select>
+													</p>
+												</p>
+												<p>
+													<label for="adult_content">
+														<input name="video[adult_content]" type="hidden" value="0">
+														<input style="margin-right: 10px" type="checkbox" value="1" name="video[adult_content]" id="video_adult_content">
+														This vidio is only for adult
+													</label>
+												</p>
+											</form>
+										</div>
+									</div><!-- /upload-video-action -->
+									<div class="upload-video--action">
+										<div class="upload-video--action_align-center">
+											<a class="ga-upload-video--action_cancel-btn upload-video--action_cancel-btn video-upload_cancel button-upload button-upload--disable" href="#">Cancel</a>
+											<a class="ga-upload-video--action_upload-btn upload-video--action_upload-btn button-upload" href="#">Upload</a>
+										</div>
+									</div><!-- /upload-video-action -->
 	            				</div>
 	            			</div><!-- /upload-video -->
+	            			<div class="edit-video clearfix">
+	            				<div class="edit-video_container">
+	            					<div class="alert alert-warning alert-dismissable" role="alert">
+	            						<button aria-label="Close" class="close" data-dismiss="alert" type="button">
+	            						<span aria-hidden="true">×</span>
+	            						</button>Your Vidio is being processed, please stay on this page until the upload finished
+	            					</div><!-- /alert -->
+	            					<div class="edit-video_left">
+		            					<div class="edit-video_thumbnail">
+		            						<div class="edit-video_thumbnail-button_container">
+		            							<a class="edit-video_thumbnail-remove" href="#">Remove</a>
+		            							<a class="edit-video_thumbnail-change edit-video__thumbnail-selector" href="#">Change</a>
+		            						</div>
+		            						<div class="edit-video_thumbnail-overlay edit-video_thumbnail-selector">
+		            							<div class="blockUI" style="display:none"></div>
+		            							<div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: absolute;"></div>
+		            							<div class="blockUI blockMsg blockElement" style="z-index: 1011; display: block; position: absolute; padding: 10px; margin: 0px auto; width: 64px; top: 42px; left: 92.5px; text-align: center; color: rgb(0, 0, 0); border: none; background-color: rgb(255, 255, 255); cursor: wait; border-radius: 4px; opacity: 0.8; height: 68px;"><img src="images/loader.gif" alt="Loader"></div>
+		            						</div>
+		            						<input class="edit-video_thumbnail-input" id="video_image" multiple="false" name="video[image]" type="file" />
+		            						<p class="edit-video_thumbnail-title">Upload picture as Vidio cover</p>
+		            					</div><!-- /edit-video_left -->
+		            					<div class="edit-video_progress-upload">
+		            						<div class="edit-video_list">
+		            							<div class="js-edit-video_list-item edit-video_list-item">
+		            								<span class="edit-video_name">10975745_939235966087974_1306179273_n.mp4</span>
+		            								<a href="#" data-index="0" class="upload-video--file-list_delete"></a>
+		            								<div class="progress edit-video_progress-bar">
+														<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+														aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+													</div>
+		            								<span class="edit-video_status-name"></span>
+		            								<span class="edit-video_percentage">Uploaded</span>
+		            							</div>
+		            						</div>
+		            					</div><!-- /edit-video_progress-upload -->
+		            				</div><!-- /edit-video_left -->
+		            				<div class="edit-video_right">
+		            					<div class="edit-video--form">
+		            						<form class="upload-video_form" id="video_form" action="form_en.php" accept-charset="UTF-8" method="post">
+												<input name="utf8" type="hidden" value="✓">
+												<input type="hidden" name="authenticity_token" value="">
+												<p>
+													<label for="title">Title</label>
+													<input class="form-control upload-video--title" maxlength="200" required="required" size="200" type="text" value="10975744_939235966087974_1306179273_n" name="" id="video_title">
+													<span class="error"></span>
+												</p>
+												<p>
+													<label for="description">Description</label>
+													<textarea class="form-control video-upload_form-textarea" name="" id="video_description"></textarea>
+												</p>
+												<div class="row">
+													<div class="col-sm-12">
+														<p>
+															<label for="group">Group</label>
+															<select name="" class="form-control video-upload_form-select">
+																<option value="22">Horror</option>
+			                                                   <option value="18">Kids</option>
+			                                                   <option value="15">Sinetron</option>
+			                                                   <option value="13">Sports</option>
+			                                                   <option selected="selected" value="11">Vlog</option>
+			                                                   <option value="10">News</option>
+			                                                   <option value="9">Music</option>
+			                                                   <option value="6">Entertainment</option>
+			                                                   <option value="4">Funny</option>
+			                                                   <option value="7">Film &amp; Series</option>
+			                                                   <option value="20">Lifestyle</option>
+			                                                   <option value="26">Webtoon</option>
+			                                                   <option value="27">Korea</option>
+															</select>
+														</p>
+													</div>
+												</div>
+												<p>
+													<p>
+														<label for="tag_list">Tag</label>
+														<select name="" multiple class="select2-choices"></select>
+													</p>
+												</p>
+												<p>
+													<label for="adult_content">
+														<input name="video[adult_content]" type="hidden" value="0">
+														<input style="margin-right: 10px" type="checkbox" value="1" name="video[adult_content]" id="video_adult_content">
+														This vidio is only for adult
+													</label>
+												</p>
+												<div id="dtbox"></div>
+												<input type="submit" name="commit" value="Finish" class="ga-upload-video--action_done-btn upload-video--action_done-btn button-upload" data-disable-with="Selesai">
+											</form>
+		            					</div>
+		            				</div><!-- /edit-video_right -->
+	            				</div>
+	            			</div><!-- /edit-video -->
 	            		</div>
 	            	</section>
 	            </main><!-- /main -->
@@ -208,23 +381,23 @@
 			<ul class="sidebar_section sidebar_section--dark collapse in sidebar_section--login" id="sidebar-settings">
 				<li class="sidebar_section-row">
 					<ul class="sidebar_menu">
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_notifications" href="/notifications" data-count="0">Notifikasi</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_my-feed" href="/dashboard/feeds">Mengikuti</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_account-settings" href="/dashboard/setting">Pengaturan Akun</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_notifications" href="#" data-count="0">Notifikasi</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_my-feed" href="#">Mengikuti</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_account-settings" href="#">Pengaturan Akun</a></li>
 						<li class="sidebar_menu-row-collapsible">
 							<a class="sidebar_menu-url sidebar_menu-url-collapsible sidebar_menu_link sidebar_menu-url--manage sidebar_manage visible" href="#">Atur</a>
 							<div class="sidebar_section-column">
 								<h3 class="sidebar_section-group">Manage</h3>
 								<ul class="sidebar_menu">
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-dashboard" href="/dashboard">Dashboard</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-videos" href="/dashboard/videos">Kelola Vidio</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-collections" href="/dashboard/channels">Koleksi</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-wallet" href="/dashboard/wallet/histories">Wallet</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-dashboard" href="#">Dashboard</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-videos" href="#">Kelola Vidio</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-collections" href="#">Koleksi</a></li>
+									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-wallet" href="#">Wallet</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_histories" href="/dashboard/histories">Riwayat Tontonan</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_menu-url--logout" rel="nofollow" data-method="delete" href="/users/logout">Keluar</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_histories" href="#">Riwayat Tontonan</a></li>
+						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_menu-url--logout" rel="nofollow" data-method="delete" href="#">Keluar</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -1100,6 +1273,24 @@
 					</ul>
 				</li>
 			</ul><!-- /sidebar_section -->
+			<div class="sidebar_section sidebar_section--following-user">
+				<ul class="sidebar_following-users">
+					<li class="sidebar_following-user-row">
+						<div class="sidebar_following-user-title">Following</div>
+					</li>
+					<li class="sidebar_following-user-row">
+						<a href="#" title="" class="sidebar_following-user-link">
+							<picture>
+								<img src="images/following/klikdokter-4721fa.jpg" alt="" class="user-avatar sidebar_following-user-avatar avatar-size-35">
+							</picture>
+							<div class="sidebar_following-user_text sidebar_text">
+								<span class="user-name sidebar_following-user_username">Klikdokter.com</span>
+								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 			<div class="sidebar_section">
 				<div class="sidebar_section sidebar_section-connect">
 					<h3 class="sidebar_section-connect-title no-border">Connect</h3>
@@ -1137,6 +1328,8 @@
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<!-- sticky -->
 	<script src="vendor/sticky/jquery.sticky.js"></script>
+	<!-- Select 2 -->
+	<script src="vendor/select2/js/select2.full.min.js"></script>
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
 	<!-- <script src="js/2.js"></script> -->
@@ -1144,7 +1337,11 @@
 	<script>
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
-	})
+	});
+	$(".select2-choices").select2({
+		tags: "true",
+		// placeholder: "Please enter 3 or more characters",
+	});
 	</script>
 
 </body>

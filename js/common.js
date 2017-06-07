@@ -43,6 +43,27 @@
 		/* Act on the event */
 		if (".site-footer_language-table") {}
 	});
-	
+
+	$(".nav-trigger_bar").click(function(){
+		var $this = $("body");
+		if ($this.hasClass('menu-close')) {
+	        $this.removeClass('menu-close').addClass('menu-open');
+	    } else if ($this.hasClass('menu-open')) {
+	        $this.removeClass('menu-open').addClass('menu-close');
+	    } else {
+	        $this.addClass('menu-close');
+	    }
+	    // $(".sidebar").toggle(
+	    //     function(){$(".sidebar").css({"display": "block"});},
+	    //     function(){$(".sidebar").css({"display": "none"});},
+	    // );
+	});
+
+	var sidebarSelector = $(".sidebar");
+	var adjustedHeight = $(".footer").height() + $(".site-header").height();
+	// console.log(adjustedHeight);
+	$(sidebarSelector).height($(window).height() - adjustedHeight);
+
+
 
 })(jQuery); // End of use strict
