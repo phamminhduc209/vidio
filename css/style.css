@@ -469,6 +469,9 @@ header#navbar {
     margin-left: 20px;
     display: inline-block;
 }
+.site-header .vidio-logo--nba {
+    padding-right: 24px;
+}
 .site-header .vidio-logo_image {
     display: block;
     width: 140px;
