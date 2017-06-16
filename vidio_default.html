@@ -30,7 +30,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="home index float-menu">
+<body class="videos show no-sidebar menu-close">
 	
 	<div class="overlay"></div>
 	<div class="fauxcolumn"></div>
@@ -91,77 +91,18 @@
                         </form>
                     </div>
                 </div>
-            </div><!-- /site-header_center -->
+            </div><!-- /site-header__center -->
             <div class="site-header_right">
                 <div class="site-header_user-upload">
-                	<a class="site-header_following-button" href="/dashboard/feeds">Following</a>
                 	<a class="ga-site-header_user-upload-button site-header_user-upload-button site-header_upload-button" rel="nofollow" href="#">Upload</a>
-            		<div class="notifications site-header_tools dropdown" data-count="0" data-you-loaded="true" data-following-loaded="true" data-you-count="0" data-following-count="20">
-            			<a class="notifications_icon activity-icon site-header_notification dropdown-toggle icon_notif" data-toggle="dropdown" href="#"></a>
-            			<div class="dropdown-menu site-header_dropdown site-header_dropdown--notification">
-            				<div class="site-header_dropdown-arrow"></div>
-							<ul class="site-header_dropdown_tab-nav">
-								<li class="site-header_dropdown_tab-nav-item active">
-									<a data-toggle="tab" class="site-header_dropdown_tab-nav_link notification-menu--you" href="#activity">You</a>
-								</li>
-								<li class="site-header_dropdown_tab-nav-item">
-									<a data-toggle="tab" class="site-header_dropdown_tab-nav_link notification-menu--following" href="#following">Following</a>
-								</li>
-							</ul><!-- /site-header_dropdown_tab-nav -->
-							<div class="tab-content">
-								<div class="tab-pane active" id="activity">
-									<ul class="activity-list activity-list--you"></ul>
-									<a class="activity-list_more activity-list_more--you" href="#">See All</a>
-								</div><!-- /#activity -->
-								<div class="tab-pane" id="following">
-									<ul class="activity-list activity-list--following following-list">
-										<li class="activity-item">
-											<a href="#" title="" class="activity-item_link  ga_notification-following-video">
-												<img src="images/notification/klikdokter-4721fa.jpg" alt="" class="activity-item_avatar">
-												<div class="activity-item_container">
-													<div class="activity-item_message">
-														<strong>Klikdokter.com</strong>
-														<span>&nbsp;</span>
-														mengUpload vidio baru
-													</div>
-												</div>
-											</a>
-										</li>
-									</ul>
-									<a class="activity-list_more activity-list_more--following ga_notification-following-see-all" href="#">See All</a>
-								</div><!-- /#following -->
-							</div><!-- /tab-content -->
-            			</div>
-            		</div><!-- /notifications site-header_tools dropdown -->
-            		<div class="site-header_user-profile dropdown">
-            			<a class="dropdown-toggle site-header_user-profile-avatar site-header_user-profile-avatar_small" data-toggle="dropdown" href="#">
-            				<div class="user-avatar--initial user-avatar user-avatar--rounded" style="border-width: 1px; line-height: 24px; font-size: 10px; width: 24px">KD</div>
-            				<span class="user-avatar_name"><span class="caret-close"></span></span>
-            			</a>
-            			<ul class="dropdown-menu site-header_dropdown site-header_dropdown--user-profile">
-            				<li><a class="site-header_dropdown--user-profile_link" href="#">Profile</a></li>
-            				<li><a class="site-header_dropdown--user-feed_link" href="#">My Feed</a></li>
-            				<li><a class="site-header_dropdown--user-profile_link" href="#">Manage</a></li>
-            				<li><a class="site-header_dropdown--user-profile_link" href="#">Logout</a></li>
-            			</ul>
-            		</div>
-            	</div>
-            </div><!-- /site-header_right -->
+            		<a class="site-header_user-upload-login site-header_login-button" id="site-header_user-upload-login" rel="nofollow" href="#">Sign in</a></div>
+            </div><!-- /site-header__right -->
 		</div>
 	</header><!-- /header -->
 
 	<div class="container-fluid clearfix" id="main-container">
 		<div id="content-column">
-			<div class="site-content" id="article-container">
-				<div class="livestreaming-notification hide-me" data-component="LivestreamingNotification">
-                    <a class="livestreaming-notification-content" href="#">
-                        <span class="livestreaming-notification_icon"></span>
-                        <div class="livestreaming-notification-content_text"></div>
-                    </a>
-                    <div class="livestreaming-notification-close">
-                    	<a class="livestreaming-notification-close_link" href="#"><span></span></a>
-                    </div>
-                </div><!-- /livestreaming-notification -->
+			<div class="watch-page-container" id="article-container">
                 <div class="notification" data-component="FlashNotification">
 	                <div class="notification-session_notice hide-me" role="alert"></div>
 	                <div class="notification-notice hide-me" role="alert"></div>
@@ -172,1410 +113,295 @@
 	            <div class="mobile-notice" data-component="MobileNotice" style="display: none;"></div>
 	            <article id="header">
 	            	<div class="ad"></div>
-
-	            </article><!-- /#header -->
+				</article><!-- /#header -->
 	            <main class="clearfix" id="main">
-	            	<div class="video-grid featured-videos featured-videos">
-		            	<div class="video-grid_container">
-		            		<h2 class="video-grid_title"><a class="title title-featured-video" href="#">VIDIO PILIHAN</a></h2>
-		            	</div><!-- /video-grid_container -->
-		            	<div class="video-grid row">
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/1.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/2.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/3.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/1.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/3.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/3.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/10.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            		<div class="col-sm-3 col-xs-12 video-grid-item">
-		            			<div class="video-widget ga-row-1">
-		            				<div class="video-widget_thumbnail frame">
-		            					<a title="" class="video-widget_thumbnail-link" href="#">
-		            						<picture class="ui-cover-image">
-		            							<img src="images/img_video/7.jpg" alt="" class="video-widget_thumbnail-image">
-		            						</picture>
-		            						<div class="video-widget_duration">01:08</div>
-		            					</a>
-		            				</div>
-		            				<div class="video-widget_caption">
-		            					<div>
-		            						<div class="video-widget_manage"></div>
-		            						<a class="video-widget_title" title="" href="">
-		            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-		            						</a>
-		            					</div>
-		            					<div>
-		            						<div class="video-widget_user">
-		            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-	            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-	        								</div>
-	    									<span class="video-widget_view-count video-plays-count">
-	    									<span class="video-plays-count-value">16.530</span> Plays</span>
-	    								</div>
-		            				</div>
-		            			</div>
-		            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-		            	</div><!-- /video-grid row -->
-	            	</div><!-- /video-grid featured-videos featured-videos -->
-
-	            	<a href="#" title="">
-	            		<div class="banner-content">
-	            			<div class="banner-content_image">
-	            				<img src="images/camera.png" alt="Camera">
-	            			</div>
-	            			<div class="banner-content_content">
-	            				<div class="banner-content_title">Ayo gabung jadi konten partner vidio!</div>
-	            				<div class="banner-content_desc">Berkreasi vidio eksklusif dan dapatkan keuntungan tambahan</div>
-	            			</div>
-	            			<div class="banner-content_button">Gabung Sekarang</div>
-	            		</div><!-- /banner-content -->
-	            	</a><!-- /a > banner-content -->
-
-	            	<div id="recommended-for-you-placeholder">
-	            		<div class="video-grid recommended-for-you recommended-for-you-fallback" id="recommended-for-you-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">REKOMENDASI</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/1.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/12.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/11.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            	</div><!-- /video-grid row -->
+	            	<div id="article-player">
+	            		<div class="player-loader"></div>
+	            		<div class="video-only vjs-container">
+	            			<!-- <video autobuffer autoloop loop controls>
+									
+							</video> -->
 	            		</div>
-	            	</div><!-- /#recommended-for-you-placeholder -->
-
-	            	<div class="video-grid recent-videos">
-	            		<div class="video-grid_container">
-            				<h2 class="video-grid_title">
-            					<a href="#" title="" class="title title-recommended-for-you">TONTON SEKARANG</a>
-            					<span class="video-grid_title video-grid_title-right">
-            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-            					</span>
-            				</h2>
-            			</div><!-- /video-grid_container -->
-            			<div id="watch_now_videos">
-            				<div class="video-grid row">
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/4.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            	</div><!-- /video-grid row -->
-            			</div><!-- /watch_now_videos -->
-	            	</div><!-- /video-grid recent-videos -->
-
-	            	<div class="most-popular-category">
-	            		<div class="video-grid category-experiment most-popular-music" id="most-popular-music-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">MUSIC TERPOPULER</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-	            				<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/5.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/6.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/7.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/8.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-	            			</div><!-- /video-grid row -->
-	            		</div>
-	            	</div><!-- /most-popular-category -->
-
-	            	<div class="most-popular-category">
-	            		<div class="video-grid category-experiment most-popular-news" id="most-popular-news-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">NEWS TERPOPULER</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-	            				<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/9.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/10.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/11.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/12.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-	            			</div><!-- /video-grid row -->
-	            		</div>
-	            	</div><!-- /most-popular-category -->
-
-	            	<div class="most-popular-category">
-	            		<div class="video-grid category-experiment most-popular-entertainment" id="most-popular-entertainment-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">ENTERTAINMENT TERPOPULER</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-	            				<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/9.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/10.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/11.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/12.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-	            			</div><!-- /video-grid row -->
-	            		</div>
-	            	</div><!-- /most-popular-category -->
-
-	            	<div class="most-popular-category">
-	            		<div class="video-grid category-experiment most-popular-sinetron" id="most-popular-sinetron-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">SINETRON TERPOPULER</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-	            				<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/9.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/10.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/11.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/12.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-	            			</div><!-- /video-grid row -->
-	            		</div>
-	            	</div><!-- /most-popular-category -->
-
-	            	<div class="most-popular-category">
-	            		<div class="video-grid category-experiment most-popular-sports" id="most-popular-sports-parent">
-	            			<div class="video-grid_container">
-	            				<h2 class="video-grid_title">
-	            					<a href="#" title="" class="title title-recommended-for-you">SPORTS TERPOPULER</a>
-	            					<span class="video-grid_title video-grid_title-right">
-	            						<a class="video-grid_title-link" id="see-all-recommended-for-you" href="#">VIDIO LAINNYA</a>
-	            					</span>
-	            				</h2>
-	            			</div><!-- /video-grid_container -->
-	            			<div class="video-grid row">
-	            				<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/9.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/10.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/11.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-			            		<div class="col-sm-3 col-xs-12 video-grid-item">
-			            			<div class="video-widget ga-row-1">
-			            				<div class="video-widget_thumbnail frame">
-			            					<a title="" class="video-widget_thumbnail-link" href="#">
-			            						<picture class="ui-cover-image">
-			            							<img src="images/img_video/12.jpg" alt="" class="video-widget_thumbnail-image">
-			            						</picture>
-			            						<div class="video-widget_duration">01:08</div>
-			            					</a>
-			            				</div>
-			            				<div class="video-widget_caption">
-			            					<div>
-			            						<div class="video-widget_manage"></div>
-			            						<a class="video-widget_title" title="" href="">
-			            							<p class="video-widget_title-wrap" title="">Ledakan Kampung Melayu</p>
-			            						</a>
-			            					</div>
-			            					<div>
-			            						<div class="video-widget_user">
-			            							<a class="user-name video-user video-widget_username" title="" href="#">Liputan6.com</a>
-		            								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-		        								</div>
-		    									<span class="video-widget_view-count video-plays-count">
-		    									<span class="video-plays-count-value">16.530</span> Plays</span>
-		    								</div>
-			            				</div>
-			            			</div>
-			            		</div><!-- /col-sm-3 col-xs-12 video-grid-item -->
-	            			</div><!-- /video-grid row -->
-	            		</div>
-	            	</div><!-- /most-popular-category -->
-
-	            	<div class="button-explore"><a class="button-sleek" href="/categories">JELAJAHI VIDIO LAINNYA</a></div>
+	            	</div><!-- /article-player -->
+					<div id="article-sidebar">
+						<div class="collection-playlist">
+							<div class="collection-playlist_info">
+								<a href="#" title="Pasar Santa">Pasar Santa</a>
+								<div class="collection-playlist_videos-count">Showing 9 vidio</div>
+							</div><!-- /collection-playlist_info -->
+							<div id="player-list">
+								<ul id="playlist-container" class="list-unstyled spec_video-playlist">
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/1.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix selected">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/2.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/3.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/4.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/5.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/6.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/7.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/8.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/9.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+									<li class="clearfix">
+										<a href="#" title="">
+											<picture class="ui-cover-image">
+												<img src="images/vidio-default/10.jpg" alt="" class="pull-left video-image">
+											</picture>
+										</a>
+										<p>
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-title">Tawar - Tawaran Aksesoris</a>
+										</p>
+										<div class="video-collection-info">
+											<a href="#" title="Tawar - Tawaran Aksesoris" class="video-user">angelalee</a>&nbsp;&nbsp;
+											<span class="video-plays-count"><span class="video-plays-count-value">23</span> Plays</span>
+										</div>
+									</li><!-- /clearfix -->
+								</ul>
+							</div><!-- /player-list -->
+						</div><!-- /collection-playlist -->
+						<div class="related">
+							<div class="wrap related_wrap hide-me" id="reco_header" style="display: block;">
+								<h4 class="related_header">Related Video</h4>
+								<ul class="list-unstyled hide-me" id="reco_gravity" style="display: block;">
+									<li class="clearfix reco-gravity js-reco-gravity">
+										<a href="#" title="" class="pull-left width-140 video-thumb">
+											<div class="frame">
+												<img src="images/vidio-default/otomotif-tesla-model-x-bikin-takjub-a3ff59.jpg" class="video-image" alt="TESLA MODEL X BIKIN TAKJUB" width="160">
+												<span class="video-duration">00:49</span>
+											</div>
+										</a>
+										<div>
+											<a href="#" class="video-title"><p>TESLA MODEL X BIKIN TAKJUB</p></a>
+										</div>
+										<div class="video-user">
+											<a class="user-name video-widget_username video-user" ref="#" style="margin-right:-5px">Liputan6.com</a>
+											<span class="verified-user verified-user-small" data-container="body" data-toggle="tooltip" data-placement="right" data-title="Verified User" data-rel="tooltip"></span>
+										</div>
+										<span class="video-plays-count">
+											<span class="video-plays-count-value">182.933</span>Plays
+										</span>
+										<span class="video-recommendation-reason" style="display: none;"></span>
+									</li><!-- /reco-gravity js-reco-gravity -->
+									<li class="clearfix reco-gravity js-reco-gravity">
+										<a href="#" title="" class="pull-left width-140 video-thumb">
+											<div class="frame">
+												<img src="images/vidio-default/eplgoalsoftheseason-overheadkicks-1ea8-640x360-00003.jpg" class="video-image" alt="TESLA MODEL X BIKIN TAKJUB" width="160">
+												<span class="video-duration">00:49</span>
+											</div>
+										</a>
+										<div>
+											<a href="#" class="video-title"><p>TESLA MODEL X BIKIN TAKJUB</p></a>
+										</div>
+										<div class="video-user">
+											<a class="user-name video-widget_username video-user" ref="#" style="margin-right:-5px">Liputan6.com</a>
+											<span class="verified-user verified-user-small" data-container="body" data-toggle="tooltip" data-placement="right" data-title="Verified User" data-rel="tooltip"></span>
+										</div>
+										<span class="video-plays-count">
+											<span class="video-plays-count-value">182.933</span>Plays
+										</span>
+										<span class="video-recommendation-reason" style="display: none;"></span>
+									</li><!-- /reco-gravity js-reco-gravity -->
+								</ul><!-- /list-unstyled -->
+								<p class="text-center hide-me" id="reco_gravity_more" style="display: block;">
+									<a id="show-more-videos-gravity" class="pagination-show-more" href="/en/indeks/terkini">Show more</a>
+								</p>
+							</div>
+						</div><!-- /related -->
+					</div><!-- /article-player -->
+					<div class="watch-page">
+						<div class="video-property-engagement">
+							<div class="video-property">
+								<div class="video-property_title">Aksesoris Biar Makin Kece</div>
+								<span class="video-property_plays-count video-plays-count"><span class="video-plays-count-value">9.976</span> Plays</span>
+								<span class="video-property_loves-count"><span class="like_count" id="votable-like-765300">125</span>&nbsp;Loves</span>
+								<span class="video-property_comments-count"><span id="video-comments-count-765300">5</span>&nbsp;Comments</span>
+							</div><!-- /video-property -->
+							<div class="video-engagement">
+								<div class="video-engagement_love-button">
+									<a href="#" title="I love This?" class="spec_love_button js-component love_wrapper js-component next-share watch-votable-actions--space vote-button" data-toggle="modal" data-target=".myModal">
+										<span class="love_icon watch-video-actions_icon love_icon_inactive"></span>
+										<span class="like_count likes-count count-125 votes" id="votable-like-">125</span>
+									</a>
+								</div>
+								<div class="video-engagement_comment-button">
+									<a href="#" title="" class="video-engagement_comment-button-trigger js-component" data-toggle="modal" data-target=".myModal">
+										<img src="images/ic-comment.png" alt="Ic comment">
+									</a>
+								</div>
+								<div class="video-engagement_share-button">
+									<a href="#" title="" class="video-engagement_share-button-trigger" data-toggle="modal" data-target=".myModal">
+										<img src="images/ic-share.png" alt="Ic share">
+									</a>
+								</div>
+								<div class="video-engagement_more-button dropdown">
+									<a class="dropdown-toggle video-engagement_more-button-trigger" data-toggle="dropdown" href="#">
+										<img src="images/ic-more.png" alt="Ic more">
+									</a>
+									<ul class="dropdown-menu vidio-engagement_dropdown">
+										<li>
+											<a class="add-to-collection js-component" href="#" title="">Add to</a>
+										</li>
+										<li>
+											<a class="report-abuse-button js-component" href="#" title="">Report</a>
+										</li>
+									</ul>
+								</div>
+							</div><!-- /video-engagement -->
+							<div class="js-add-to-collection-flash"></div><!-- /js-add-to-collection-flash -->
+						</div><!-- /video-property-engagement -->
+						<div class="video-author">
+							<div class="video-author_container">
+								<div class="video-author_avatar">
+									<a class="user-avatar_link spec_user-link" href="#">
+										<img class="video-author_avatar-image avatar avatar-size-32" alt="angelalee" src="images/user/angelalee-ab1cb6.jpg" width="32" height="32">
+									</a>
+									<div class="video-author_username">
+										<div class="vidio-author_username-user">
+											<a class="user-name video-channel" style="margin: 0" href="/en/@angelalee">angelalee</a>
+											<span class="verified-user verified-user--medium" data-container="body" data-toggle="tooltip" data-placement="right" data-title="Verified User" data-rel="tooltip" data-original-title="" title=""></span>
+										</div>
+										<span>Uploaded  13 Jun 2017</span>
+									</div>
+								</div><!-- /video-author_avatar -->
+								<div class="video-author_actions">
+									<div class="follow-button">
+										<a class="js-component button-follow spec_button-follow button-follow--small" data-follow-content="Follow" href="#"></a>
+									</div>
+								</div><!-- /video-author_actions -->
+							</div>
+						</div><!-- /video-author -->
+						<div class="wrap">
+							
+						</div><!-- /wrap -->
+					</div><!-- /watch-page -->
 	            </main><!-- /main -->
 			</div>
 		</div><!-- /content-column -->
 
 		<div class="sidebar js-sidebar-adjust" id="left-column">
-			<!-- <div class="sidebar_login">
+			<div class="sidebar_login">
 				<a class="ga_login-button login-button button button_sleek is-uppercase" href="#">
 					<span class="translation_missing" title="">Login</span>
 				</a>
 				<a class="ga_register-button button button_sleek is-uppercase" href="#">
 					<span class="translation_missing" title="">Register</span>
 				</a>
-			</div> --><!-- /sidebar_login -->
-			<div class="sidebar_user">
-				<a class="sidebar_user-link" href="#">
-					<div class="user-avatar--initial user-avatar sidebar_user-avatar" style="border-width: 1px; line-height: 35px; font-size: 15px; width: 35px">KD</div>Ku Duc
-				</a>
-				<a data-toggle="collapse" href="#sidebar-settings"><span class="sidebar_user-caret"></span></a>
-			</div><!-- /sidebar_user -->
-			<ul class="sidebar_section sidebar_section--dark collapse in sidebar_section--login" id="sidebar-settings">
-				<li class="sidebar_section-row">
-					<ul class="sidebar_menu">
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_notifications" href="#" data-count="0">Notifications</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_my-feed" href="#">My Feed</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_account-settings" href="#">Account Settings</a></li>
-						<li class="sidebar_menu-row-collapsible">
-							<a class="sidebar_menu-url sidebar_menu-url-collapsible sidebar_menu_link sidebar_menu-url--manage sidebar_manage visible" href="#">Manage</a>
-							<div class="sidebar_section-column">
-								<h3 class="sidebar_section-group">Manage</h3>
-								<ul class="sidebar_menu">
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-dashboard" href="#">Dashboard</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-videos" href="#">My Vidio</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-collections" href="#">Collections</a></li>
-									<li><a class="sidebar_menu-url  sidebar_manage_link sidebar_manage-wallet" href="#">Wallet</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_histories" href="#">History</a></li>
-						<li><a class="sidebar_menu-url sidebar_menu_link sidebar_menu-url--logout" rel="nofollow" data-method="delete" href="#">Logout</a></li>
-					</ul>
-				</li>
-			</ul>
+			</div><!-- /sidebar_login -->
 			<ul class="sidebar_section">
 				<li class="sidebar_section-row">
 					<ul class="sidebar_menu">
@@ -2448,24 +1274,6 @@
 					</ul>
 				</li>
 			</ul><!-- /sidebar_section -->
-			<div class="sidebar_section sidebar_section--following-user">
-				<ul class="sidebar_following-users">
-					<li class="sidebar_following-user-row">
-						<div class="sidebar_following-user-title">Following</div>
-					</li>
-					<li class="sidebar_following-user-row">
-						<a href="#" title="" class="sidebar_following-user-link">
-							<picture>
-								<img src="images/following/klikdokter-4721fa.jpg" alt="" class="user-avatar sidebar_following-user-avatar avatar-size-35">
-							</picture>
-							<div class="sidebar_following-user_text sidebar_text">
-								<span class="user-name sidebar_following-user_username">Klikdokter.com</span>
-								<span class="verified-user verified-user-small" data-toggle="tooltip" data-placement="right" title="Verified User"></span>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div><!-- /sidebar_section-following-user -->
 			<div class="sidebar_section">
 				<div class="sidebar_section sidebar_section-connect">
 					<h3 class="sidebar_section-connect-title no-border">Connect</h3>
@@ -2491,6 +1299,25 @@
                 </div>
             </div>
         </footer><!-- /footer site-footer -->
+
+        <!-- Modal -->
+		<div class="modal fade myModal" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					</div>
+					<div class="modal-body">
+					...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div><!-- /#main-container -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">

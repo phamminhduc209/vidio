@@ -29561,7 +29561,7 @@ window.vidio = Object.assign({}, window.vidio, {
     function() {
         this.JST || (this.JST = {}), this.JST["templates/popups/creator_form_insufficient_plays"] = function() {
             var e = [];
-            return e.push('<div class="popup-creator popup-creator__registration"><div class="popup-creator__registration-container"><h3 class="popup-creator__registration-title">Maaf, akun kamu belum mencapai 1000 plays</h3><p class="popup-creator__registration-text">Bagikan vidio kamu ke sosial media<div class="popup-creator__registration-videos"></div></p></div></div>'), e.join("")
+            return e.push('<div class="popup-creator popup-creator__registration"><div class="popup-creator__registration-container"><h3 class="popup-creator__registration-title">Maaf, akun kamu belum mencapai 1000 plays</h3><p class="popup-creator__registration-text">Share vidio kamu ke sosial media<div class="popup-creator__registration-videos"></div></p></div></div>'), e.join("")
         }
     }.call(this),
     function() {
@@ -29569,7 +29569,7 @@ window.vidio = Object.assign({}, window.vidio, {
             var t = [],
                 n = e || {};
             return function(e) {
-                t.push('<div class="popup-creator popup-creator__registration"><div class="popup-creator__registration-container"><h3 class="popup-creator__registration-title">Maaf, akun kamu belum mempunyai Vidio</h3><p class="popup-creator__registration-text">silahkan unggah vidio kamu dan bagikan vidio kamu ke media sosial</p><a' + jade.attr("href", "" + e, !0, !1) + ' class="popup-creator__registration-upload">Upload</a></div></div>')
+                t.push('<div class="popup-creator popup-creator__registration"><div class="popup-creator__registration-container"><h3 class="popup-creator__registration-title">Maaf, akun kamu belum mempunyai Vidio</h3><p class="popup-creator__registration-text">silahkan unggah vidio kamu dan Share vidio kamu ke media sosial</p><a' + jade.attr("href", "" + e, !0, !1) + ' class="popup-creator__registration-upload">Upload</a></div></div>')
             }.call(this, "upload_path" in n ? n.upload_path : "undefined" != typeof upload_path ? upload_path : void 0), t.join("")
         }
     }.call(this),
