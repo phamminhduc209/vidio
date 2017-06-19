@@ -33,59 +33,103 @@
 <body class="sessions new session_background">
 	
 	<div class="section_header clearfix">
-		<div class="row">
-			<div class="section_header-back col-sm-1 hidden-xs">
+			<div class="section_header-back">
 				<a class="session_header-backlink" href="index.html" title="back to home">
 					<i class="fa fa-angle-left" aria-hidden="true"></i>
 				</a>
 			</div>
-			<div class="session_header-logo col-sm-11">
+			<div class="session_header-logo">
 				<a href="/?locale=en" title="Vidio">
 					<img alt="Nonton Online Video Film Lucu, Unik dan Menarik, Gratis di Vidio.com!" class="vidio-logo_image" src="images/logo_login.png">
 				</a>
 			</div>
-		</div>
 	</div><!-- /section_header -->
 
 	<div class="section_main">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 session_leftcolumn">
-					<div class="session_intro">
-						<h2 class="session_intro-headline">Vidio.com memungkinkan anda untuk mengunggah, menonton, dan berbagi video.</h2>
-						<p class="session_intro-text">Ayo jelajahi vidio.com. Beragam kategori dengan video pilihan yang menarik untuk ditonton. <br>Unggah video menarik kalian dan bagikan kepada pengunjung vidio.com lainnya.</p>
-					</div>
+			<div class="col-sm-6 session_leftcolumn">
+				<div class="session_intro">
+					<h2 class="session_intro-headline">VIDIO.COM ALLOWS YOU TO RELEVE, WATCH, AND SHARE VIDEOS.</h2>
+					<p class="session_intro-text">Let's explore vidio.com. Various categories with interesting videos to watch. Upload your interesting videos and share them with other vidio.com visitors.</p>
 				</div>
-				<div class="col-sm-6 session_rightcolumn">
-					<!-- Nav tabs -->
-					<div class="block-tab">
-						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#Signin" aria-controls="Signin" role="tab" data-toggle="tab">Sign in</a></li>
-							<li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
-						</ul>
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="Signin">
-								<form action="#" method="POST" class="form-session form-session_login">
+			</div>
+			<div class="col-sm-6 session_rightcolumn">
+				<!-- Nav tabs -->
+				<div class="block-tab">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#Signin" aria-controls="Signin" role="tab" data-toggle="tab">Sign in</a></li>
+						<li role="presentation"><a href="#Register" aria-controls="Register" role="tab" data-toggle="tab">Register</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="Signin">
+							<div class="form-session form-session_login">
+								<form action="#" method="POST" class="simple_form auth-sessions">
 									<div class="form-session_header">
-										<h3 class="form-session__header-title">Login</h3>
+										<h3 class="form-session_header-title">Login</h3>
 									</div>
-									<div class=".form-session_row">
-										<input class="string required" autofocus="autofocus" required="required" placeholder="Email or Username" type="text" name="" id="user_login">
+									<div class="form-session_row">
+										<input autofocus="autofocus" required="required" placeholder="Email or Username" type="text" name="">
 									</div>
-									<div class=".form-session_row">
-										<input class="string required" autofocus="autofocus" required="required" placeholder="Password" type="password" name="" id="user_login">
+									<div class="form-session_row">
+										<input autofocus="autofocus" required="required" placeholder="Password" type="password" name="">
 									</div>
 									<div class="form-session_label-field">
-										<div class="form-session__row-remember">
-											<input class="form-session_checkbox" type="checkbox" value="1" checked="checked" name="" id="user_remember_me">
-											<label class="form-session_label-remember" for="user_remember_me">Remember me</label>
+										<div class="form-session_row-remember">
+											<label class="form-session_label-remember">
+												<input class="form-session_checkbox" type="checkbox" value="1" checked="checked" name="">
+												Remember me
+											</label>
 										</div>
-										<a class="form-session_forgot-link" tabindex="5" href="/users/password/new?locale=en&amp;user_return_to=https%3A%2F%2Fwww.vidio.com%2Fen">Forgot password?</a>
+										<a class="form-session_forgot-link" tabindex="5" href="#">Forgot password?</a>
+									</div>
+									<div class="form-session_row clearfix">
+										<div class="form-session_help">
+											<a href="#" target="_blank">User Guide</a>
+										</div>
+										<input type="submit" name="commit" value=" Sign in " class="btn btn-login" data-disable-with=" Sign in ">
 									</div>
 								</form>
 							</div>
-							<div role="tabpanel" class="tab-pane" id="Register">...</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="Register">
+							<div class="form-session form-session_login">
+								<form action="#" method="POST" class="simple_form auth-sessions">
+									<div class="form-session_header">
+										<h3 class="form-session_header-title">Register</h3>
+									</div>
+									<div class="form-session_row">
+										<input autofocus="autofocus" required="required" placeholder="Email addres *" type="text" name="">
+									</div>
+									<div class="form-session_row">
+										<input autofocus="autofocus" required="required" placeholder="Username *" type="text" name="">
+									</div>
+									<div class="form-session_row">
+										<input autofocus="autofocus" required="required" placeholder="Phone Number" type="text" name="">
+									</div>
+									<div class="form-session_row">
+										<input id="user_password--register" autofocus="autofocus" required="required" placeholder="Password *" type="password" name="">
+										<input class="form-session_toggle-password" id="user_show_password" type="checkbox">
+										<label class="form-session_toggle-password-label" for="user_show_password"></label>
+									</div>
+									<div class="form-intro">
+										<p>
+											By registering at vidio.com you agree to follow&nbsp;
+											<a class="white-link" href="#">Terms of Use</a>
+											&nbsp;and&nbsp;
+											<a Class="white-link" href ="#">Privacy Policy</a>
+										</p>
+									</div>
+									<div class="form-session_row clearfix">
+										<input type="submit" name="commit" value="Register" class="btn btn-register ga_sign-up" data-disable-with="Register">
+									</div>
+									<div class="form-session_row form-session_separator"><p>Or sign in using an account</p></div>
+									<div class="form-session_row clearfix">
+										<a id="facebook-login" class="btn-login_facebook ga_with-facebook-sign-up" href="#">Facebook</a>
+										<a id="google-login" class="btn-login_google ga_with-google-sign-up" href="#"><span>Google</span></a>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -101,6 +145,18 @@
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
 	<!-- <script src="js/2.js"></script> -->
+
+	<script type="text/javascript">
+	$(document).ready(function () {
+		$(".form-session_toggle-password-label").click(function () {
+			if ($("#user_password--register").attr("type")=="password") {
+				$("#user_password--register").attr("type", "text");
+			}else{
+				$("#user_password--register").attr("type", "password");
+			}
+		});
+	});
+	</script>
 
 </body>
 </html>

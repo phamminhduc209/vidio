@@ -53,17 +53,45 @@
 	    } else {
 	        $this.addClass('menu-close');
 	    }
-	    // $(".sidebar").toggle(
-	    //     function(){$(".sidebar").css({"display": "block"});},
-	    //     function(){$(".sidebar").css({"display": "none"});},
-	    // );
 	});
 
 	var sidebarSelector = $(".sidebar");
 	var adjustedHeight = $(".footer").height() + $(".site-header").height();
-	// console.log(adjustedHeight);
 	$(sidebarSelector).height($(window).height() - adjustedHeight);
 
+	// var s = $(".js-mega-menu_handle"),
+	//     l = ($(".js-mega-menu"), $(".js-mega-menu_handle span")),
+	//     c = $(".js-sidebar-adjust"),
+	//     d = $(window),
+	//     u = $(".submenu_container"),
+	//     p = $(".category_wrapper", ".site-header_left");
+	// d.on("scroll", function() {
+	//     d.scrollTop() > 0 && "62px" !== u.css("top") ? (p.animate({
+	//         top: "-90"
+	//     }, {
+	//         duration: 1e3
+	//     }), s.removeClass("invisible"), l.removeClass("caret-open"), l.addClass("caret-close"), c.css("margin-top", 62), u.css("top", 62)) : 0 === d.scrollTop() && "62px" === u.css("top") && (p.animate({
+	//         top: "64"
+	//     }, 1e3), s.addClass("invisible"), l.removeClass("caret-close"), l.addClass("caret-open"), c.css("margin-top", 101), u.css("top", 101))
+	// }), $('a.category_nav_list_item[href="' + window.location.pathname + '"]').addClass("category_nav_list_item-active"), $(".category_nav").css({
+	//     overflow: "visible"
+	// })
+
+	var s = $(".js-mega-menu_handle"),
+	    l = ($(".js-mega-menu"), $(".js-mega-menu_handle span")),
+	    c = $(".js-sidebar-adjust"),
+	    d = $(window),
+	    u = $(".submenu_container"),
+	    p = $(".category_wrapper", ".site-header_left");
+	    d.on("scroll", function() {
+		    d.scrollTop() > 0 && "62px" !== u.css("top") ? (p.animate({
+		        top: "-90"
+		    }, {
+		        duration: 1e3
+		    }), s.removeClass("invisible"), l.removeClass("caret-open"), l.addClass("caret-close"), c.css("margin-top", 62), u.css("top", 62)) : 0 === d.scrollTop() && "62px" === u.css("top") && (p.animate({
+		        top: "64"
+		    }, 1e3), s.addClass("invisible"), l.removeClass("caret-close"), l.addClass("caret-open"), c.css("margin-top", 101), u.css("top", 101))
+		})
 
 
 })(jQuery); // End of use strict

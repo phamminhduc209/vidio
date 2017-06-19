@@ -536,6 +536,10 @@ header#navbar {
     padding: 7px 20px;
     width: auto
 }
+.category_nav_list .morenav-hover_menu li a {
+    padding: 7px 20px !important;
+    width: auto;
+}
 .category_nav_list .morenav-hover_menu li a:after {
     background: transparent
 }
@@ -4402,7 +4406,7 @@ body.videos.show #article-sidebar, body.livestreamings.show #article-sidebar {
 
 /*===== Page Login =====*/
 .session_background {
-    overflow: hidden;
+    /*overflow: hidden;*/
     background: linear-gradient(0deg, rgba(29,38,55,0.85), rgba(29,38,55,0.85)), url("../images/new-login-cover.jpg") repeat;
     background-size: cover;
 }
@@ -4415,10 +4419,17 @@ body.videos.show #article-sidebar, body.livestreamings.show #article-sidebar {
 .session_header-logo {
     text-align: center;
 }
+.section_header-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 56px;
+}
 .session_header-backlink i {
     color: #999;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 56px;
 }
 .section_main {
     padding-top: 65px;
@@ -4433,7 +4444,7 @@ body.videos.show #article-sidebar, body.livestreamings.show #article-sidebar {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 25px;
     width: 85%;
 }
 .session_intro-text {
@@ -4445,7 +4456,7 @@ body.videos.show #article-sidebar, body.livestreamings.show #article-sidebar {
 .form-session {
     position: relative;
     background: rgba(255,255,255,0.3);
-    margin: 0 auto 15px;
+    /*margin: 0 auto 15px;*/
     padding: 20px;
     border-radius: 3px;
 }
@@ -4478,6 +4489,250 @@ body.videos.show #article-sidebar, body.livestreamings.show #article-sidebar {
     border: none;
     border-bottom-color: transparent;
 }
+form.auth-sessions, .session-form form {
+    color: white;
+}
+.form-session_header-title {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.form-session_row {
+    clear: both;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form-session input[type="text"], .form-session input[type="password"], .form-session input[type="tel"], .form-session input[type="email"], .form-session_input {
+    margin-bottom: 0;
+    color: #000;
+    border-radius: 3px;
+    height: auto;
+    padding: 13px 18px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-session_label-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.form-session_row-remember {
+    font-size: 12px;
+    font-weight: 400;
+}
+.form-session__checkbox {
+    float: left;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    display: inline;
+    margin-right: 0.375em;
+}
+/*.form-session .form-session_label-remember {
+    display: inline-block;
+    visibility: visible;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 12px;
+}*/
+.form-session_forgot-link {
+    float: right;
+    font-size: 12px;
+}
+form.auth-sessions a, .session-form form a {
+    color: #ffffff;
+    text-shadow: none;
+}
+.form-session_help {
+    float: left;
+    margin-top: 5px;
+}
+.btn-login {
+    width: 96px;
+}
+.btn-login, .btn-register {
+    background: #f43521;
+    background: -webkit-linear-gradient(top, #f43521 0%, #dc2b18 100%);
+    background: linear-gradient(to bottom, #f43521 0%, #dc2b18 100%);
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    float: right;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.form-session .form-session_toggle-password-label {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-image: url("../images/eye.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    display: block;
+    height: 17px;
+    margin-top: -18px;
+    opacity: 0.25;
+    width: 20px;
+    visibility: visible;
+}
+.form-session .form-session_toggle-password:checked+.form-session_toggle-password-label {
+    opacity: 1;
+}
+.form-session .form-session_toggle-password {
+    display: none;
+}
+.form-session_tooltip {
+    position: absolute;
+    right: 395px;
+    top: -15px;
+    width: 123%;
+    line-height: 1.3;
+    font-size: 14px;
+    padding: 10px 26px;
+    background-color: #ffffff;
+    color: #000;
+    display: block;
+    border-radius: 3px;
+}
+.form-session .form-session_error-skip {
+    position: absolute;
+    bottom: 8px;
+    right: 26px;
+    color: #EF423C;
+    float: right;
+}
+form.auth-sessions .form-intro, .session-form form .form-intro {
+    margin-bottom: 26px;
+}
+form.auth-sessions p, .session-form form p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+form.auth-sessions .white-link, .session-form form .white-link {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: underline;
+}
+form.auth-sessions .white-link:hover, .session-form form .white-link:hover {
+    text-decoration: none;
+}
+.btn-register {
+    width: 100%;
+}
+.form-session_separator {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+}
+.btn-login_facebook, .btn-login_google {
+    display: block;
+    text-align: center;
+    width: 48%;
+    font-weight: 600;
+    padding: 7px 0;
+    border-radius: 4px;
+}
+.btn-login_facebook {
+    background: url("../images/fb-icon.svg") no-repeat 5px/25px 25px,-webkit-linear-gradient(top, #487ad7 0%, #3a6cc8 100%);
+    background: url("../images/fb-icon.svg") no-repeat 5px/25px 25px,linear-gradient(to bottom, #487ad7 0%, #3a6cc8 100%);
+    float: left;
+}
+.btn-login_facebook:hover {
+    color: inherit;
+    background: url("../images/fb-icon.svg") no-repeat 5px/25px 25px,#2a5fc2;
+}
+.btn-login_google {
+    background: url("../images/google-icon.svg") no-repeat 10px/17px 17px,-webkit-linear-gradient(bottom, #e6e6e6, #f7f7f7);
+    background: url("../images/google-icon.svg") no-repeat 10px/17px 17px,linear-gradient(to top, #e6e6e6, #f7f7f7);
+    float: right;
+}
+.btn-login_google:hover {
+    background: url("../images/google-icon.svg") no-repeat 10px/17px 17px,-webkit-linear-gradient(bottom, #f7f7f7, #e6e6e6);
+    background: url("../images/google-icon.svg") no-repeat 10px/17px 17px,linear-gradient(to top, #f7f7f7, #e6e6e6);
+}
+.btn-login_google span {
+    color: #333;
+}
+.btn-login:hover, .btn-register:hover {
+    color: inherit;
+    background: #d71e0b;
+}
+
+.session_centercolumn {
+    margin: auto;
+    max-width: 600px;
+}
+
+/*===== 404 =====*/
+.container {
+    max-width: 1200px;
+}
+body.errors .error-container_404, form.auth-sessions body.help-inline .error-container_404, .session-form form body.help-inline .error-container_404 {
+    margin: 0 auto;
+    width: 385px;
+    text-align: center;
+    font-size: 18px;
+}
+body.errors .error-container_404 .error_code, form.auth-sessions body.help-inline .error-container_404 .error_code, .session-form form body.help-inline .error-container_404 .error_code {
+    font-weight: 600;
+    margin-top: 86px;
+    font-size: 200px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #ef423b;
+}
+body.errors .error-container_404 .error_title, form.auth-sessions body.help-inline .error-container_404 .error_title, .session-form form body.help-inline .error-container_404 .error_title {
+    font-weight: 100;
+    font-size: 40px;
+    color: #000;
+}
+body.errors .error-container_404 .error_description, form.auth-sessions body.help-inline .error-container_404 .error_description, .session-form form body.help-inline .error-container_404 .error_description {
+    margin: 6px 0 0 0;
+}
+.btn-danger {
+    border-color: #EF423C;
+    background: #EF423C;
+}
+body.errors .error-container_404 .error_back-to-home, form.auth-sessions body.help-inline .error-container_404 .error_back-to-home, .session-form form body.help-inline .error-container_404 .error_back-to-home {
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #ef423c;
+    margin-top: 20px;
+    padding: 7px 9px 9px 9px;
+}
+body.errors .error-popular-videos .title-popular-videos, form.auth-sessions body.help-inline .error-popular-videos .title-popular-videos, .session-form form body.help-inline .error-popular-videos .title-popular-videos {
+    font-size: 14px;
+    font-weight: bold;
+}
+.video-grid_title--right {
+    float: right;
+}
+body.errors .error-popular-videos .video-grid_title-link, form.auth-sessions body.help-inline .error-popular-videos .video-grid_title-link, .session-form form body.help-inline .error-popular-videos .video-grid_itle-link {
+    display: none;
+}
+
 
 
 /*===== Back To Top =====*/
