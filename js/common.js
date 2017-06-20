@@ -1,15 +1,6 @@
 (function($){
   "use strict";
 
-	// When you hover over menu, the background of the body will be background: rgba(0,0,0,0.8);
-	$('.sidebar_menu-row-collapsible')
-	.mouseenter(function() {
-		$('body').find(".overlay").show();
-	})
-	.mouseleave(function() {
-		$('body').find(".overlay").hide();
-	});
-
 	// Show suggestion saerch
   
 	// ===== Scroll to Top ==== 
@@ -65,33 +56,34 @@
 	//     d = $(window),
 	//     u = $(".submenu_container"),
 	//     p = $(".category_wrapper", ".site-header_left");
-	// d.on("scroll", function() {
-	//     d.scrollTop() > 0 && "62px" !== u.css("top") ? (p.animate({
-	//         top: "-90"
-	//     }, {
-	//         duration: 1e3
-	//     }), s.removeClass("invisible"), l.removeClass("caret-open"), l.addClass("caret-close"), c.css("margin-top", 62), u.css("top", 62)) : 0 === d.scrollTop() && "62px" === u.css("top") && (p.animate({
-	//         top: "64"
-	//     }, 1e3), s.addClass("invisible"), l.removeClass("caret-close"), l.addClass("caret-open"), c.css("margin-top", 101), u.css("top", 101))
-	// }), $('a.category_nav_list_item[href="' + window.location.pathname + '"]').addClass("category_nav_list_item-active"), $(".category_nav").css({
-	//     overflow: "visible"
-	// })
+	//     d.on("scroll", function() {
+	// 	    d.scrollTop() > 0 && "62px" !== u.css("top") ? (p.animate({
+	// 	        top: "-90"
+	// 	    }, {http://localhost/www/vidio/#
+	// 	        duration: 1e3
+	// 	    }), s.removeClass("invisible"), l.removeClass("caret-open"), l.addClass("caret-close"), c.css("margin-top", 62), u.css("top", 62)) : 0 === d.scrollTop() && "62px" === u.css("top") && (p.animate({
+	// 	        top: "64"
+	// 	    }, 1e3), s.addClass("invisible"), l.removeClass("caret-close"), l.addClass("caret-open"), c.css("margin-top", 101), u.css("top", 101))
+	// 	})
 
-	var s = $(".js-mega-menu_handle"),
-	    l = ($(".js-mega-menu"), $(".js-mega-menu_handle span")),
-	    c = $(".js-sidebar-adjust"),
-	    d = $(window),
-	    u = $(".submenu_container"),
-	    p = $(".category_wrapper", ".site-header_left");
-	    d.on("scroll", function() {
-		    d.scrollTop() > 0 && "62px" !== u.css("top") ? (p.animate({
-		        top: "-90"
-		    }, {
-		        duration: 1e3
-		    }), s.removeClass("invisible"), l.removeClass("caret-open"), l.addClass("caret-close"), c.css("margin-top", 62), u.css("top", 62)) : 0 === d.scrollTop() && "62px" === u.css("top") && (p.animate({
-		        top: "64"
-		    }, 1e3), s.addClass("invisible"), l.removeClass("caret-close"), l.addClass("caret-open"), c.css("margin-top", 101), u.css("top", 101))
-		})
+	// When you hover over menu, the background of the body will be background: rgba(0,0,0,0.8);
+	// var c = $(".sidebar_menu-url-collapsible"),
+ //    	s = $(".submenu_container").css("left", "-340px");
 
+ 	var c = $(".sidebar_menu-url-collapsible"),
+    	s = $(".submenu_container").css("left", "-340px");
+    $(c).mouseenter(function(){
+    	$(".submenu_container .sidebar_section-column").remove();
+        $(this).next().clone().appendTo(s);
+        $(s).css("left", "250px")
+    });
+	$(".sidebar_menu-url-collapsible")
+	.mouseenter(function() {
+		$("body").find(".overlay").show();
+	})
+	.mouseleave(function() {
+		$("body").find(".overlay").hide();
+		$(s).css("left", "-340px");
+	});
 
 })(jQuery); // End of use strict

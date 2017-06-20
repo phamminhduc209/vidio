@@ -1343,9 +1343,9 @@ main#main, article#header, article#footer {
 }
 .sidebar_section-column {
     z-index: -1;
-    display: block;
+    display: none;
     position: absolute;
-    left: -175%;
+    left: 0;
     top: 0;
     border-right: 1px solid #f0f0f0;
     background: #f7f7f7;
@@ -1655,6 +1655,10 @@ a.button-follow {
     top: 101px;
     height: 100%;
     z-index: 2114;
+}
+.submenu_container .sidebar_section-column {
+    display: block;
+    border-left: 0;
 }
 .site-footer {
     font-size: 12px;
@@ -4795,4 +4799,14 @@ body.errors .error-popular-videos .video-grid_title-link, form.auth-sessions bod
 .collections_item:after {
     content: " ";
     display: table;
+}
+
+.lSGallery li {
+    position: relative;
+}
+.lSGallery li:hover img {
+    opacity: 0.3;
+}
+.lSGallery li.active img {
+    opacity: 0.3;
 }
