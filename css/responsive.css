@@ -18,6 +18,12 @@
 	.watch-page-container main#main {
 	    width: 1184px;
 	}
+	.lSGallery {
+		display: none;
+	}
+	.lSSlideOuter.vertical {
+		padding-right: 0 !important;
+	}
 }
 
 @media (max-width: 992px) and (min-width: 481px) {
@@ -29,4 +35,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+@media (max-width: 600px) {
+	.lSSlideOuter.vertical .lightSlider > * {
+		height: auto !important;
+	}
 }

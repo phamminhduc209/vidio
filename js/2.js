@@ -63,6 +63,7 @@ function ShowTooltipOnMouseover(e, t) {
         n(e, "mouseout")
     })
 }
+
 Function.prototype.bind || (Function.prototype.bind = function(e) {
         if ("function" != typeof this) throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
         var t = Array.prototype.slice.call(arguments, 1),
@@ -28987,7 +28988,10 @@ Config.VideoValidator = {
             Object.create(VidioHelpers);
             n.on("mouseover touchstart", function() {
                 SidebarMenu.submenuState = "shown", setTimeout(function() {
-                    "shown" === SidebarMenu.submenuState && ($(SidebarMenu.body).addClass("nonscrollable"), $(".submenu__container .sidebar__section-column").remove(), $(this).next().clone().appendTo(".submenu__container"), $(this).addClass("visible"), e.stop(!0, !0).animate({
+                    "shown" === SidebarMenu.submenuState && ($(SidebarMenu.body).addClass("nonscrollable"),
+                        $(".submenu__container .sidebar__section-column").remove(),
+                        $(this).next().clone().appendTo(".submenu__container"),
+                        $(this).addClass("visible"), e.stop(!0, !0).animate({
                         left: "250px"
                     }, 250, function() {
                         t.show(), new window.ComponentInitializers
@@ -29011,7 +29015,10 @@ Config.VideoValidator = {
             }), SidebarMenu.submenuState = "hidden"
         }.bind(this),
         closeSubmenuImmediatelly: function() {
-            $(".submenu__container").css("left", "-340px"), $(".submenu__container").removeClass("visible"), $(".overlay").hide(), $(SidebarMenu.body).removeClass("nonscrollable"), SidebarMenu.submenuState = "hidden"
+            $(".submenu__container").css("left", "-340px"), $(".submenu__container").removeClass("visible"),
+            $(".overlay").hide(),
+            $(SidebarMenu.body).removeClass("nonscrollable"),
+            SidebarMenu.submenuState = "hidden"
         }.bind(this)
     }, SidebarMenu = {
         sidebarState: "enable",

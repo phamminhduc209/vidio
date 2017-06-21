@@ -70,14 +70,14 @@
 	// var c = $(".sidebar_menu-url-collapsible"),
  //    	s = $(".submenu_container").css("left", "-340px");
 
- 	var c = $(".sidebar_menu-url-collapsible"),
-    	s = $(".submenu_container").css("left", "-340px");
-    $(c).mouseenter(function(){
-    	$(".submenu_container .sidebar_section-column").remove();
-        $(this).next().clone().appendTo(s);
-        $(s).css("left", "250px")
-    });
-	$(".sidebar_menu-url-collapsible")
+ 	// var c = $(".sidebar_menu-url-collapsible"),
+  //   	s = $(".submenu_container").css("left", "-340px");
+  //   $(c).mouseenter(function(){
+  //   	$(".submenu_container .sidebar_section-column").remove();
+  //       $(this).next().clone().appendTo(s);
+  //       $(s).css("left", "250px").animate({left: "250px"}, 2500)
+  //   });
+	$(".sidebar_menu-url-collapsible, submenu_container")
 	.mouseenter(function() {
 		$("body").find(".overlay").show();
 	})
